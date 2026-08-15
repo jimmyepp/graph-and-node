@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>Blog Ideas | Graph &amp; Node</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="container" style="max-width: 600px; padding-top: 3rem;">
+    <h1 style="font-size: 2.25rem;">Submit Blog Idea</h1>
+    <p style="color: var(--pico-muted-color); margin-bottom: 2rem;">Feed raw notes into the automated blogging pipeline.</p>
+
+    <form id="idea-form">
+      <label for="topic">Topic / Title Concept</label>
+      <input type="text" id="topic" name="topic" required placeholder="e.g. Entity Resolution in Healthcare SEO" />
+
+      <label for="raw_notes">Raw Notes & Thoughts</label>
+      <textarea id="raw_notes" name="raw_notes" rows="6" required placeholder="Paste your unformatted notes, insights, or links here..."></textarea>
+
+      <button type="submit" id="submit-btn" style="margin-top: 1rem;">Submit Idea</button>
+    </form>
+    
+    <div id="status-message" style="margin-top: 1rem; padding: 1rem; border-radius: 4px; display: none;"></div>
+  </main>
+
+  <!-- Firebase SDKs -->
+  <script defer src="/__/firebase/10.12.2/firebase-app-compat.js"></script>
+  <script defer src="/__/firebase/10.12.2/firebase-firestore-compat.js"></script>
+  <!-- Initialize Firebase -->
+  <script defer src="/__/firebase/init.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('idea-form');
+      const statusMessage = document.getElementById('status-message');
+      const submitBtn = document.getElementById('submit-btn');
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const topic = document.getElementById('topic').value;
+        const rawNotes = document.getElementById('raw_notes').value;
+        
+        submitBtn.setAttribute('aria-busy', 'true');
+        submitBtn.disabled = true;
+
+        try {
+          const db = firebase.firestore();
+          await db.collection('blog_ideas').add({
+            topic: topic,
+            raw_notes: rawNotes,
+            status: 'pending',
+            created_at: firebase.firestore.FieldValue.serverTimestamp(),
+            published_url: null
+          });
+          
+          statusMessage.style.display = 'block';
+          statusMessage.style.backgroundColor = 'var(--pico-mark-background-color)';
+          statusMessage.style.color = 'var(--pico-mark-color)';
+          statusMessage.textContent = 'Idea submitted successfully! The agent will process it on its next run.';
+          form.reset();
+        } catch (error) {
+          console.error("Error writing document: ", error);
+          statusMessage.style.display = 'block';
+          statusMessage.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
+          statusMessage.style.color = 'white';
+          statusMessage.textContent = 'Error: ' + error.message;
+        } finally {
+          submitBtn.removeAttribute('aria-busy');
+          submitBtn.disabled = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

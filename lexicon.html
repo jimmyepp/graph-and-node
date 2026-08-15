@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>GEO &amp; SEO Lexicon | Graph &amp; Node | AI Data Registry</title>
+  <meta name="description" content="Search the definitive registry of Generative Engine Optimization (GEO), RAG algorithms, and entity search terminology. Learn how they impact healthcare provider visibility." />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="container" style="padding-top: 2rem; padding-bottom: 2rem;">
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+            <img src="tree2.svg?v=2" alt="Graph &amp; Node Logo" class="nav-logo" />
+            <span class="nav-title" style="font-weight: 600; font-size: 1.2rem; color: #fff; margin-left: 0.75rem; letter-spacing: 0.5px;">LEXICON</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="desktop-menu">
+        <li><a href="index.html#value">The ROI</a></li>
+        <li><a href="index.html#methodology">Strategy</a></li>
+        <li><a href="blog/index.html">Technical Briefs</a></li>
+        <li><a href="lexicon.html" class="active-nav-link" style="color: var(--pico-primary); border-bottom: 2px solid var(--pico-primary); padding-bottom: 4px;">Lexicon</a></li>
+        <li><a href="index.html#contact" role="button">Request Audit</a></li>
+      </ul>
+      <ul class="mobile-hamburger-wrapper">
+        <li>
+          <button class="hamburger-btn" id="lexicon-hamburger" aria-label="Toggle Menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-drawer" id="mobile-menu-drawer">
+    <div class="mobile-menu-content">
+      <div class="mobile-drawer-logo-container">
+        <a href="index.html" style="text-decoration: none;">
+          <img src="tree2.svg?v=2" alt="Graph &amp; Node Logo" class="drawer-logo" />
+        </a>
+      </div>
+      <ul class="mobile-menu-links">
+        <li><a href="index.html#value">The ROI</a></li>
+        <li><a href="index.html#methodology">Strategy</a></li>
+        <li><a href="blog/index.html">Technical Briefs</a></li>
+        <li><a href="lexicon.html" style="color: var(--pico-primary);">Lexicon</a></li>
+        <li><a href="index.html#contact" role="button">Request Audit</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="container" style="padding-top: 2rem; padding-bottom: 5rem;">
+    
+    <!-- Hero / Header Section -->
+    <section id="lexicon-hero" style="text-align: center; margin-bottom: 3rem;">
+      <h1 style="font-size: 2.75rem; max-width: 800px; margin-inline: auto; line-height: 1.2;">
+        The GEO &amp; SEO Lexicon
+      </h1>
+      <p style="font-size: 1.2rem; color: var(--pico-muted-color); max-width: 700px; margin-inline: auto; margin-bottom: 0;">
+        The authoritative filing system mapping generative search mechanics, RAG parameters, and entity optimization strategies.
+      </p>
+    </section>
+
+    <!-- Search and Filters Section -->
+    <section id="search-section" style="background: #0c0e14; border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 12px; padding: 2rem; margin-bottom: 3rem; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);">
+      
+      <!-- Real-time Fuzzy Search Bar -->
+      <div style="margin-bottom: 1.5rem; position: relative;">
+        <label for="lexicon-search" style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.5rem; display: block; color: #fff;">Search Registry</label>
+        <input type="search" id="lexicon-search" placeholder="Search by term, concept, author, or keyword (e.g., position bias, RAG)..." style="margin-bottom: 0; padding-right: 2.5rem; background: #06070a; border-color: rgba(255, 255, 255, 0.1);" />
+      </div>
+
+      <!-- Filter Controls Group -->
+      <div class="filters-container">
+        
+        <!-- Specialty Category Filter -->
+        <div class="filter-group">
+          <span class="filter-label">Specialty Category</span>
+          <div class="filter-pills" id="category-pills">
+            <button class="pill active" data-value="all">All Specialties</button>
+            <button class="pill" data-value="dense-retrieval">Retrieval &amp; RAG</button>
+            <button class="pill" data-value="entity-architecture">Entity &amp; Graph</button>
+            <button class="pill" data-value="conversational-synthesis">Synthesis &amp; AEO</button>
+            <button class="pill" data-value="performance-metrics">Metrics &amp; Tracking</button>
+            <button class="pill" data-value="enterprise-strategy">Enterprise Strategy</button>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
+          <!-- Technical Depth Filter -->
+          <div class="filter-group">
+            <span class="filter-label">Technical Depth</span>
+            <div class="filter-pills" id="depth-pills">
+              <button class="pill active" data-value="all">All Levels</button>
+              <button class="pill" data-value="algorithmic">Algorithmic Substrate</button>
+              <button class="pill" data-value="strategic">Strategic Framework</button>
+            </div>
+          </div>
+
+          <!-- Healthcare Risk Filter -->
+          <div class="filter-group">
+            <span class="filter-label">Clinical Omission Risk</span>
+            <div class="filter-pills" id="risk-pills">
+              <button class="pill active" data-value="all">All Risks</button>
+              <button class="pill" data-value="high">High Risk</button>
+              <button class="pill" data-value="medium">Medium Risk</button>
+              <button class="pill" data-value="low">Low Risk</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Active Filter Status & Reset -->
+      <div id="filter-status-row" style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.05); display: flex; justify-content: space-between; align-items: center;">
+        <span id="results-count" style="font-size: 0.9rem; color: var(--pico-muted-color);">Found 25 terms</span>
+        <button id="reset-filters" class="outline contrast" style="font-size: 0.8rem; padding: 0.25rem 0.75rem; margin: 0; width: auto; display: none;">Clear Filters</button>
+      </div>
+
+    </section>
+
+    <!-- Grid Layout of Term Cards -->
+    <section id="results-section">
+      <div id="lexicon-grid" class="lexicon-grid">
+        <article class="term-card" id="card-agentic-seo-workflow" data-id="agentic-seo-workflow" data-category="enterprise-strategy" data-depth="strategic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Agentic SEO Workflow" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Enterprise Strategy</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Agentic SEO Workflow</h3>
+            <p itemprop="description">An autonomous, continuous optimization loop that utilizes AI agents to index, triage, patch, and review site data.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-ai-controllability" data-id="ai-controllability" data-category="enterprise-strategy" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for AI Controllability" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Enterprise Strategy</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">AI Controllability</h3>
+            <p itemprop="description">The degree of influence a brand can exert over generative search outputs through the deliberate structuring of primary, secondary, and tertiary public data sources.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-ai-signal-rate" data-id="ai-signal-rate" data-category="performance-metrics" data-depth="strategic" data-risk="medium" tabindex="0" role="button" aria-label="View details for AI Signal Rate" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">AI Signal Rate</h3>
+            <p itemprop="description">A KPI measuring the frequency with which a specific brand is explicitly cited, linked, or mentioned within generative search summaries.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-answer-accuracy-rate" data-id="answer-accuracy-rate" data-category="performance-metrics" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Answer Accuracy Rate" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Answer Accuracy Rate</h3>
+            <p itemprop="description">A compliance metric grading the factual correctness of generative search outputs regarding a brand's credentials and services.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-answer-engine-optimization" data-id="answer-engine-optimization" data-category="conversational-synthesis" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Answer Engine Optimization (AEO)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Synthesis & AEO</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Answer Engine Optimization (AEO)</h3>
+            <p itemprop="description">Structuring and formatting content for direct, zero-click answer synthesis, recognizing that modern generative search engines terminate the user journey on the interface.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-bot-impression-inflation" data-id="bot-impression-inflation" data-category="performance-metrics" data-depth="strategic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Bot-Induced Impression Inflation (BIII)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Bot-Induced Impression Inflation (BIII)</h3>
+            <p itemprop="description">The distortion of organic search data where pages ranking beyond position 30 receive significant impressions (up to 29%) but zero clicks, caused by automated web crawlers.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-brand-canon" data-id="brand-canon" data-category="enterprise-strategy" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Brand Canon" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Enterprise Strategy</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Brand Canon</h3>
+            <p itemprop="description">The verified, canonical dataset representing the official factual truth of a brand, used to train models and audit hallucinated search results.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-brand-agnostic-retrieval" data-id="brand-agnostic-retrieval" data-category="conversational-synthesis" data-depth="strategic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Brand-Agnostic Retrieval Bias (BARB)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Synthesis & AEO</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Brand-Agnostic Retrieval Bias (BARB)</h3>
+            <p itemprop="description">The tendency of AI search engines to trigger generative summaries 1.9x more frequently for non-branded queries than for branded queries.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-citation-advantage" data-id="citation-advantage" data-category="performance-metrics" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Citation Advantage" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Citation Advantage</h3>
+            <p itemprop="description">The measurable lift in click-through rate (CTR) achieved by a brand when it is explicitly cited inside a generative search summary.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-citation-churn-volatility" data-id="citation-churn-volatility" data-category="performance-metrics" data-depth="algorithmic" data-risk="high" tabindex="0" role="button" aria-label="View details for Citation Churn Volatility (CCV)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Citation Churn Volatility (CCV)</h3>
+            <p itemprop="description">The frequency and rate at which the specific URLs cited in a generative search response fluctuate over time, while semantic meaning remains constant.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-citation-decay-by-tier" data-id="citation-decay-by-tier" data-category="performance-metrics" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Citation Decay by Tier" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Citation Decay by Tier</h3>
+            <p itemprop="description">The volatility rate at which online citations lose credibility and are cycled out of model databases, categorized by domain authority tiers.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-citation-overlap" data-id="citation-overlap" data-category="performance-metrics" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Citation Overlap" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Citation Overlap</h3>
+            <p itemprop="description">The percentage of cited domains that match between traditional organic search rankings and generative AI summaries.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-content-recency" data-id="content-recency" data-category="performance-metrics" data-depth="strategic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Content Recency Bias" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Content Recency Bias</h3>
+            <p itemprop="description">The algorithmic preference of search bots to retrieve and cite recently updated content nodes over older, static assets.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-content-volume-neutrality" data-id="content-volume-neutrality" data-category="performance-metrics" data-depth="strategic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Content Volume Neutrality (CVN)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Content Volume Neutrality (CVN)</h3>
+            <p itemprop="description">The architectural trait of LLM retrievers where total index size (page count) has a near-zero correlation with AI visibility, differing from legacy search engines.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-conversational-entity-density" data-id="conversational-entity-density" data-category="entity-architecture" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Conversational Entity Density (CED)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Entity & Graph</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Conversational Entity Density (CED)</h3>
+            <p itemprop="description">The average concentration of recognized named entities (brands, locations, clinical terms) per unit of text length within an LLM search response.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-conversational-retentiveness" data-id="conversational-retentiveness" data-category="conversational-synthesis" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Conversational Traffic Retentiveness (CTR-R)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Synthesis & AEO</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Conversational Traffic Retentiveness (CTR-R)</h3>
+            <p itemprop="description">The structural property of conversational AI systems that retains users within the platform chat window, resulting in a click-through rate (CTR) to source websites that is up to 96% lower than that of traditional search.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-dense-retrieval-architecture" data-id="dense-retrieval-architecture" data-category="dense-retrieval" data-depth="algorithmic" data-risk="high" tabindex="0" role="button" aria-label="View details for Dense Retrieval Architecture" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Dense Retrieval Architecture</h3>
+            <p itemprop="description">The database and retrieval pipeline structure utilizing vector databases, embedding indices, and similarity calculations to source contexts for RAG systems.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-domain-page-decoupling" data-id="domain-page-decoupling" data-category="entity-architecture" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Domain-Page Authority Decoupling" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Entity & Graph</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Domain-Page Authority Decoupling</h3>
+            <p itemprop="description">The phenomenon in generative retrievers where a page's citation likelihood is strongly correlated with its parent domain's overall authority, showing minimal correlation with page backlinks.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-entity-recognition-pipeline" data-id="entity-recognition-pipeline" data-category="entity-architecture" data-depth="algorithmic" data-risk="high" tabindex="0" role="button" aria-label="View details for Entity Recognition Pipeline" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Entity & Graph</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Entity Recognition Pipeline</h3>
+            <p itemprop="description">The sequence of machine learning checks used to identify, associate, and verify a brand entity before granting a search citation.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-entity-seo" data-id="entity-seo" data-category="entity-architecture" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Entity SEO" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Entity & Graph</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Entity SEO</h3>
+            <p itemprop="description">Structuring a brand's properties, profiles, and authors as distinct semantic entities in global knowledge systems rather than simple text string matches.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-fanout-query-alignment" data-id="fanout-query-alignment" data-category="dense-retrieval" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Fanout Query Alignment (FQA)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Fanout Query Alignment (FQA)</h3>
+            <p itemprop="description">The process of optimizing content structures to match the generated sub-questions (fanout queries) that an LLM constructs during its internal multi-step reasoning phase.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-first-page-link-monopoly" data-id="first-page-link-monopoly" data-category="performance-metrics" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for First-Page Link Monopoly (FPLM)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">First-Page Link Monopoly (FPLM)</h3>
+            <p itemprop="description">The extreme concentration of search engine click activity restricted to the first page (top 10 results) of search results, rendering impressions beyond position 10 virtually worthless.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-generative-ai-optimization" data-id="generative-ai-optimization" data-category="enterprise-strategy" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Generative AI Optimization (GAIO)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Enterprise Strategy</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Generative AI Optimization (GAIO)</h3>
+            <p itemprop="description">Enterprise-grade strategy focusing on brand narrative protection, hallucination tracking, and sentiment steering across LLM environments.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-generative-engine-optimization" data-id="generative-engine-optimization" data-category="conversational-synthesis" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Generative Engine Optimization (GEO)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Synthesis & AEO</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Generative Engine Optimization (GEO)</h3>
+            <p itemprop="description">The practice of structuring content, entities, and authority signals so generative AI systems can retrieve, trust, and cite a source.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-generative-search-optimization" data-id="generative-search-optimization" data-category="conversational-synthesis" data-depth="strategic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Generative Search Optimization (GSO)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Synthesis & AEO</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Generative Search Optimization (GSO)</h3>
+            <p itemprop="description">The evolution of search optimization combining traditional organic ranking signals, schema metadata, and geo-local entities to secure citations in generative answer layouts.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-grounding-with-bing-search" data-id="grounding-with-bing-search" data-category="enterprise-strategy" data-depth="strategic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Grounding with Bing Search" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Enterprise Strategy</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Grounding with Bing Search</h3>
+            <p itemprop="description">Azure AI developer capabilities allowing LLM agents to break out of static parameter weights and incorporate real-time, public web data.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-hidden-gems-and-ugc" data-id="hidden-gems-and-ugc" data-category="entity-architecture" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Hidden Gems &amp; UGC" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Entity & Graph</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Hidden Gems &amp; UGC</h3>
+            <p itemprop="description">The search integration algorithm prioritizing first-hand human experiences, user-generated content (UGC), and forum opinions over corporate copywriting.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-hybrid-retrieval" data-id="hybrid-retrieval" data-category="dense-retrieval" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Hybrid Retrieval" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Hybrid Retrieval</h3>
+            <p itemprop="description">A search retrieval architecture that combines dense vector similarity scores with sparse lexical keyword matches.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-information-gain" data-id="information-gain" data-category="dense-retrieval" data-depth="strategic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Information Gain" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Information Gain</h3>
+            <p itemprop="description">The mathematical measure of unique, net-new facts and data points introduced by a document relative to the baseline training corpus of the LLM.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-informational-intent-propensity" data-id="informational-intent-propensity" data-category="conversational-synthesis" data-depth="strategic" data-risk="low" tabindex="0" role="button" aria-label="View details for Informational Intent Propensity (IIP)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Synthesis & AEO</span>
+            <span class="risk-badge low">Low Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Informational Intent Propensity (IIP)</h3>
+            <p itemprop="description">The high probability that a search query containing informational modifiers or long-tail structures will trigger a generative AI overview instead of standard SERP components.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-intent-pre-emption-rate" data-id="intent-pre-emption-rate" data-category="conversational-synthesis" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Intent Pre-Emption Rate (IPR)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Synthesis & AEO</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Intent Pre-Emption Rate (IPR)</h3>
+            <p itemprop="description">The rate at which an AI Overview answers a user's question directly on the SERP, eliminating the need for the user to navigate to any external source site.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-knowledge-graph" data-id="knowledge-graph" data-category="entity-architecture" data-depth="algorithmic" data-risk="high" tabindex="0" role="button" aria-label="View details for Knowledge Graph" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Entity & Graph</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Knowledge Graph</h3>
+            <p itemprop="description">A network of real-world entities (people, places, things) and their relationships, serving as a clean dataset for search engines to resolve identity.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-llm-optimization" data-id="llm-optimization" data-category="conversational-synthesis" data-depth="strategic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Large Language Model Optimization (LLMO)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Synthesis & AEO</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Large Language Model Optimization (LLMO)</h3>
+            <p itemprop="description">Technical alignment of content with machine learning tokenization models, LLM vocabulary matrices, and generative SERP co-occurrence patterns.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-latent-intent-projection" data-id="latent-intent-projection" data-category="dense-retrieval" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Latent Intent Projection" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Latent Intent Projection</h3>
+            <p itemprop="description">The mathematical process of mapping a user's initial query string to underlying semantic intent vectors to intercept LLM-generated background rephrasings.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-latent-multi-query-event" data-id="latent-multi-query-event" data-category="dense-retrieval" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Latent Multi-Query Event" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Latent Multi-Query Event</h3>
+            <p itemprop="description">The operational moment where fanned-out sub-queries are executed concurrently across vector stores, database APIs, and knowledge graphs.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-length-agnostic-retrieval" data-id="length-agnostic-retrieval" data-category="dense-retrieval" data-depth="algorithmic" data-risk="low" tabindex="0" role="button" aria-label="View details for Length-Agnostic Retrieval Efficacy (LARE)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge low">Low Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Length-Agnostic Retrieval Efficacy (LARE)</h3>
+            <p itemprop="description">The ability of an information retrieval system to extract and cite highly relevant text passages regardless of the total length or word count of the host webpage.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-linguistic-citation-monopoly" data-id="linguistic-citation-monopoly" data-category="conversational-synthesis" data-depth="strategic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Linguistic Citation Monopoly (LCM)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Synthesis & AEO</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Linguistic Citation Monopoly (LCM)</h3>
+            <p itemprop="description">The concentration of generative AI overviews within a single language (e.g. English representing &gt;50% of global overviews).</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-listicle-aggregation-primacy" data-id="listicle-aggregation-primacy" data-category="conversational-synthesis" data-depth="strategic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Listicle Aggregation Primacy (LAP)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Synthesis & AEO</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Listicle Aggregation Primacy (LAP)</h3>
+            <p itemprop="description">The systematic bias of LLM search retrievers toward structured comparisons, rankings, and listicle formats, which allow the model to extract comparative features.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-llms-txt-metadata" data-id="llms-txt-metadata" data-category="conversational-synthesis" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for llms.txt Metadata" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Synthesis & AEO</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">llms.txt Metadata</h3>
+            <p itemprop="description">Deploying a standardized, markdown-formatted text file at the root of a domain to present context-optimized content directory paths directly to LLM crawlers.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-lost-in-the-middle" data-id="lost-in-the-middle" data-category="dense-retrieval" data-depth="algorithmic" data-risk="high" tabindex="0" role="button" aria-label="View details for Lost in the Middle (Position Bias)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Lost in the Middle (Position Bias)</h3>
+            <p itemprop="description">A RAG vulnerability where transformer models exhibit high recall accuracy at the boundaries of the context window but fail in the middle.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-markup-retriever-misalignment" data-id="markup-retriever-misalignment" data-category="dense-retrieval" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Markup-Retriever Misalignment (MRM)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Markup-Retriever Misalignment (MRM)</h3>
+            <p itemprop="description">The divergence in parser processing where an LLM retriever relies directly on raw markdown, HTML text, or paragraph embeddings rather than structured metadata arrays.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-micro-passage-relevance" data-id="micro-passage-relevance" data-category="dense-retrieval" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Micro-Passage Relevance (MPR)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Micro-Passage Relevance (MPR)</h3>
+            <p itemprop="description">The search engine indexing methodology that breaks web pages into small semantic chunks (passages) for vector comparison, ensuring that the relevance score is calculated based on the matching chunk.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-multi-platform-authority" data-id="multi-platform-authority" data-category="enterprise-strategy" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Multi-Platform Authority Co-citation" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Enterprise Strategy</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Multi-Platform Authority Co-citation</h3>
+            <p itemprop="description">The practice of co-mentioning a brand alongside authoritative entities across cross-domain platforms (especially YouTube and high-DR portals) to influence vector embedding associations.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-navboost-and-glue" data-id="navboost-and-glue" data-category="entity-architecture" data-depth="algorithmic" data-risk="high" tabindex="0" role="button" aria-label="View details for NavBoost &amp; Glue (Google Leak)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Entity & Graph</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">NavBoost &amp; Glue (Google Leak)</h3>
+            <p itemprop="description">Google's internal search scoring systems that utilize real user clickstream logs, hover behaviors, and scroll actions to adjust search results.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-non-influenceable-citation" data-id="non-influenceable-citation" data-category="entity-architecture" data-depth="strategic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Non-Influenceable Citation Dominance" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Entity & Graph</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Non-Influenceable Citation Dominance</h3>
+            <p itemprop="description">The concentration of citations in LLM search responses that point to open-knowledge directories, app store listings, or non-commercial platforms.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-non-ranking-citation-capture" data-id="non-ranking-citation-capture" data-category="performance-metrics" data-depth="strategic" data-risk="low" tabindex="0" role="button" aria-label="View details for Non-Ranking Citation Capture (NRCC)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge low">Low Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Non-Ranking Citation Capture (NRCC)</h3>
+            <p itemprop="description">The ability of a webpage or media asset to secure citations in generative AI search results despite not ranking in the top 100 traditional organic search results.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-organic-rank-decoupling" data-id="organic-rank-decoupling" data-category="performance-metrics" data-depth="strategic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Organic Rank-Citation Decoupling (ORCD)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Organic Rank-Citation Decoupling (ORCD)</h3>
+            <p itemprop="description">The divergence in ranking mechanics where traditional search signals do not guarantee a generative overview citation, resulting in over 60% of AIO citations pulling from outside the top 10.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-probabilistic-search" data-id="probabilistic-search" data-category="dense-retrieval" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Probabilistic Search" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Probabilistic Search</h3>
+            <p itemprop="description">Reframing search engine optimization from securing guaranteed ranking positions to maximizing the statistical probability that content is selected across shifting, non-deterministic AI retrieval paths.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-prompt-based-optimization" data-id="prompt-based-optimization" data-category="conversational-synthesis" data-depth="strategic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Prompt-based Optimization" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Synthesis & AEO</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Prompt-based Optimization</h3>
+            <p itemprop="description">Structuring online content so it aligns with the common prompt patterns and extraction queries used by LLM agents during RAG summarization.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-promptagator" data-id="promptagator" data-category="dense-retrieval" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for PROMPTAGATOR (Google Patent)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">PROMPTAGATOR (Google Patent)</h3>
+            <p itemprop="description">A Google patent using LLMs to generate massive quantities of task-specific synthetic training queries from a handful of prompt exemplars.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-query-fan-out" data-id="query-fan-out" data-category="dense-retrieval" data-depth="algorithmic" data-risk="high" tabindex="0" role="button" aria-label="View details for Query Fan-Out" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Query Fan-Out</h3>
+            <p itemprop="description">The search orchestration technique where an LLM decomposes and expands a single user request into multiple parallel semantic sub-queries.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-reciprocal-rank-fusion" data-id="reciprocal-rank-fusion" data-category="dense-retrieval" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Reciprocal Rank Fusion (RRF)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Reciprocal Rank Fusion (RRF)</h3>
+            <p itemprop="description">An algorithmic sorting technique that combines the rankings of multiple separate retrieval runs to synthesize a singular, prioritized list of search results.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-referral-disparity-index" data-id="referral-disparity-index" data-category="performance-metrics" data-depth="strategic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Referral Disparity Index (RDI)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Referral Disparity Index (RDI)</h3>
+            <p itemprop="description">The ratio comparing the volume of referral traffic sent to external websites per search query between a traditional search engine and a conversational engine.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-regional-overview-density" data-id="regional-overview-density" data-category="conversational-synthesis" data-depth="strategic" data-risk="low" tabindex="0" role="button" aria-label="View details for Regional Overview Density (ROD)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Synthesis & AEO</span>
+            <span class="risk-badge low">Low Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Regional Overview Density (ROD)</h3>
+            <p itemprop="description">The percentage of search queries in a specific country or geographic region that trigger a generative AI overview.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-relevance-engineering" data-id="relevance-engineering" data-category="dense-retrieval" data-depth="algorithmic" data-risk="high" tabindex="0" role="button" aria-label="View details for Relevance Engineering (r19g)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Relevance Engineering (r19g)</h3>
+            <p itemprop="description">An optimization framework abandoning domain-level metrics in favor of passage-level semantic fragmenting, aligning specific text chunks with dense vector retrieval systems.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-retrieval-consensus-divergence" data-id="retrieval-consensus-divergence" data-category="dense-retrieval" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Retrieval Consensus Divergence (RCD)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Retrieval Consensus Divergence (RCD)</h3>
+            <p itemprop="description">The phenomenon where two distinct retrieval-augmented generation (RAG) systems produce semantically equivalent conclusions (high semantic similarity) using highly disjoint sets of source URLs (low citation overlap).</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-retrieval-augmented-search" data-id="retrieval-augmented-search" data-category="dense-retrieval" data-depth="algorithmic" data-risk="high" tabindex="0" role="button" aria-label="View details for Retrieval-Augmented Search (RAS)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Retrieval-Augmented Search (RAS)</h3>
+            <p itemprop="description">A search architecture combining database retrieval systems with Large Language Models, supplying the model with external context before response generation.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-semantic-content-anchoring" data-id="semantic-content-anchoring" data-category="dense-retrieval" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Semantic Content Anchoring (SCA)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Semantic Content Anchoring (SCA)</h3>
+            <p itemprop="description">The stability of the underlying core sentiment, intent, and informational output of an AI search overview, despite high volatility in generated wording and citations.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-semantic-triples" data-id="semantic-triples" data-category="entity-architecture" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Semantic Triples" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Entity & Graph</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Semantic Triples</h3>
+            <p itemprop="description">Structuring sentence patterns around explicit subject-predicate-object relationships to boost vector retrieval accuracy.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-snippet-level-gatekeeping" data-id="snippet-level-gatekeeping" data-category="dense-retrieval" data-depth="algorithmic" data-risk="high" tabindex="0" role="button" aria-label="View details for Snippet-Level Gatekeeping (SLG)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Snippet-Level Gatekeeping (SLG)</h3>
+            <p itemprop="description">The preliminary filtering process where a search agent's retrieval model evaluates the relevance of a page based solely on its title, URL, and metadata snippet before deciding to index or fetch the full webpage.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-stateful-chat" data-id="stateful-chat" data-category="conversational-synthesis" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Stateful Chat (Google Patent)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Synthesis & AEO</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Stateful Chat (Google Patent)</h3>
+            <p itemprop="description">Continuous session tracking systems mapping query history, temporal data, and user signals to generate background context embeddings.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-structured-data-neutrality" data-id="structured-data-neutrality" data-category="entity-architecture" data-depth="algorithmic" data-risk="high" tabindex="0" role="button" aria-label="View details for Structured Data Neutrality (SDN)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Entity & Graph</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Structured Data Neutrality (SDN)</h3>
+            <p itemprop="description">The state where structured markup (such as JSON-LD schema) fails to act as a direct citation lever or ranking boost in LLM retrieval pipelines.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-synthetic-query-generation" data-id="synthetic-query-generation" data-category="dense-retrieval" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Synthetic Query Types" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Synthetic Query Types</h3>
+            <p itemprop="description">The categories of search variations generated by sequence-to-sequence expansion models to widen search coverage.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-temporal-citation-decay" data-id="temporal-citation-decay" data-category="performance-metrics" data-depth="algorithmic" data-risk="high" tabindex="0" role="button" aria-label="View details for Temporal Citation Decay (TCD)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Temporal Citation Decay (TCD)</h3>
+            <p itemprop="description">The rate at which the likelihood of a page being cited by a search agent decreases due to lack of recent updates, driven by freshness filters.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-thematic-search" data-id="thematic-search" data-category="entity-architecture" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Thematic Search (Google Patent)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Entity & Graph</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Thematic Search (Google Patent)</h3>
+            <p itemprop="description">Google search architecture grouping retrieved passage summaries into conceptual 'themes' to dictate multi-modal UI header layouts.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-traffic-cannibalization" data-id="traffic-cannibalization" data-category="performance-metrics" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Traffic Cannibalization" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Traffic Cannibalization</h3>
+            <p itemprop="description">The decrease in referral clicks from organic search results caused by generative engines synthesizing answers directly in the user interface.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-vector-embeddings" data-id="vector-embeddings" data-category="dense-retrieval" data-depth="algorithmic" data-risk="medium" tabindex="0" role="button" aria-label="View details for Vector Embeddings" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Retrieval & RAG</span>
+            <span class="risk-badge medium">Medium Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Vector Embeddings</h3>
+            <p itemprop="description">High-dimensional mathematical coordinates representing the semantic meaning of words, sentences, or paragraphs, processed through neural transformer architectures.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-zero-click-ctr-degradation" data-id="zero-click-ctr-degradation" data-category="performance-metrics" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Zero-Click CTR Degradation (ZCCD)" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Zero-Click CTR Degradation (ZCCD)</h3>
+            <p itemprop="description">The accelerating decline in click-through rates for position-one organic listings caused by the presence of a generative AI summary that satisfies the searcher's intent above the fold.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+        <article class="term-card" id="card-zero-click-performance-metrics" data-id="zero-click-performance-metrics" data-category="performance-metrics" data-depth="strategic" data-risk="high" tabindex="0" role="button" aria-label="View details for Zero-Click Performance Metrics" itemscope itemtype="https://schema.org/DefinedTerm">
+          <div class="term-card-header">
+            <span class="term-badge">Metrics & Tracking</span>
+            <span class="risk-badge high">High Risk</span>
+          </div>
+          <div class="term-card-body">
+            <h3 itemprop="name">Zero-Click Performance Metrics</h3>
+            <p itemprop="description">KPIs tracking brand visibility, impressions, and user interactions that occur entirely within synthesized search results without a user clicking through to the website.</p>
+          </div>
+          <div class="term-card-footer">
+            Inspect Node <span>&rarr;</span>
+          </div>
+        </article>
+      </div>
+      
+      <!-- Empty State -->
+      <div id="empty-state" style="display: none; text-align: center; padding: 4rem 2rem; border: 1px dashed rgba(255, 255, 255, 0.1); border-radius: 8px;">
+        <p style="font-size: 1.2rem; color: var(--pico-muted-color); margin-bottom: 1rem;">No matching terms found. Try refining your search query or filters.</p>
+        <button id="empty-reset" class="outline" style="font-size: 0.9rem; width: auto; margin-inline: auto;">Reset Search</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Sliding Details Drawer (Premium UI Element) -->
+  <div id="drawer-backdrop" class="drawer-backdrop"></div>
+  <div id="details-drawer" class="details-drawer" aria-hidden="true" role="dialog" aria-labelledby="drawer-term-name">
+    <div class="drawer-header">
+      <h2 id="drawer-term-name" style="margin: 0; font-size: 1.75rem; color: #fff;">Term Title</h2>
+      <button id="close-drawer" class="close-btn" aria-label="Close details">&times;</button>
+    </div>
+    
+    <div class="drawer-body">
+      <!-- Badge Metadata Row -->
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+        <span class="drawer-badge" id="drawer-category-badge">Category</span>
+        <span class="drawer-badge" id="drawer-depth-badge">Depth</span>
+        <span class="drawer-badge" id="drawer-risk-badge">Risk</span>
+      </div>
+
+      <!-- Core Definition -->
+      <div class="drawer-section">
+        <h4 class="section-title">Core Definition</h4>
+        <p id="drawer-definition" style="font-size: 1.05rem; line-height: 1.6; color: #f1f5f9;">Core definition goes here.</p>
+      </div>
+
+      <!-- Strategic Focus -->
+      <div class="drawer-section">
+        <h4 class="section-title">Algorithmic &amp; Strategic Context</h4>
+        <p id="drawer-strategic-focus" style="font-size: 0.95rem; line-height: 1.6; color: #cbd5e1;">Strategic details go here.</p>
+      </div>
+
+      <!-- Healthcare Impact (The Patient Journey) -->
+      <div class="drawer-section healthcare-alert">
+        <h4 class="section-title" style="color: #00f5c4; margin-bottom: 0.5rem;">Clinical Omission Risk &amp; Impact</h4>
+        <p id="drawer-healthcare-impact" style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">How this impacts physician search and patient acquisition.</p>
+      </div>
+
+      <!-- Structured Code Snippet Playground (Option 2) -->
+      <div id="drawer-code-section" class="drawer-section" style="display: none;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+          <h4 class="section-title" style="margin: 0; color: #00f5c4;">Implementation Blueprint</h4>
+          <button id="copy-code-btn" class="outline" style="font-size: 0.75rem; padding: 0.25rem 0.75rem; margin: 0; width: auto; height: auto; line-height: 1.2; border-color: rgba(0, 245, 196, 0.3); color: #00f5c4;">Copy Code</button>
+        </div>
+        <pre style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); padding: 1rem; border-radius: 6px; overflow-x: auto; margin: 0;"><code id="drawer-code-block" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 0.8rem; color: #38bdf8; white-space: pre; word-spacing: normal; word-break: normal;"></code></pre>
+      </div>
+
+      <!-- Research Sources / Citation Links -->
+      <div class="drawer-section">
+        <h4 class="section-title">Research Sources &amp; Citations</h4>
+        <ul id="drawer-sources" class="drawer-links-list">
+          <!-- Dynamically populated -->
+        </ul>
+      </div>
+
+      <!-- Semantic Connections (Related Terms) -->
+      <div class="drawer-section" style="border-bottom: none; padding-bottom: 0;">
+        <h4 class="section-title">Related Nodes (Semantic Network)</h4>
+        <div id="drawer-related" class="related-terms-container">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container" style="padding-top: 4rem; padding-bottom: 2rem; border-top: 1px solid var(--pico-muted-border-color); text-align: center; color: var(--pico-muted-color);">
+    <p>&copy; 2026 Graph &amp; Node LLC. Establishing the definitive truth for medical practitioners.</p>
+  </footer>
+
+  <!-- Database & Logic Scripts -->
+  <script src="lexicon-data.js"></script>
+  <script src="lexicon.js"></script>
+
+</body>
+</html>

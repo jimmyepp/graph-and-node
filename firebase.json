@@ -1,0 +1,38 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "hosting": {
+    "site": "graph-and-node",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      "firestore.rules",
+      "**/.*",
+      "**/node_modules/**",
+      "*.py",
+      "*.js.js",
+      "main_js.js",
+      "raw_ross_breast_center.html",
+      "analyze_css.py",
+      "analyze_html.py",
+      "analyze_js_classes.py",
+      "analyze_js_endpoints.py",
+      "analyze_scripts.py",
+      "check_classes.py",
+      "check_doctors_rendering.py",
+      "check_loaders.py",
+      "dump_sparkle_provider.py",
+      "fetch_main_js.py",
+      "fetch_raw_html.py",
+      "test_api.py",
+      "test_api_sparkle.py",
+      "test_kyruus.py",
+      "test_kyruus_keywords.py",
+      "test_kyruus_sparkle_details.py",
+      ".DS_Store",
+      "**/.DS_Store"
+    ]
+  }
+}

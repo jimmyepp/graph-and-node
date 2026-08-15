@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>How AI Engines Resolve Physician Entities | Graph &amp; Node</title>
+  <meta name="description" content="A deep dive into Retrieval-Augmented Generation (RAG), Entity Resolution, and why the Iceberg Principle dictates your visibility in AI search engines." />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="../styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://graphandnode.com/blog/how-ai-search-resolves-physician-entities.html"
+    },
+    "headline": "How AI Search Engines Resolve Physician Entities",
+    "description": "A deep dive into Retrieval-Augmented Generation (RAG), Entity Resolution, and why the Iceberg Principle dictates your visibility in AI search engines.",
+    "datePublished": "2026-05-25",
+    "author": {
+      "@type": "Person",
+      "name": "Jimmy Epp",
+      "url": "https://www.linkedin.com/in/jimmyepp/",
+      "sameAs": [
+        "https://www.linkedin.com/in/jimmyepp/"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Graph & Node LLC",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://graphandnode.com/logo.png"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="container" style="padding-top: 2rem;">
+    <nav>
+      <ul>
+        <li><a href="../index.html" style="font-weight: bold; text-decoration: none;">← Graph &amp; Node</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">All Briefs</a></li>
+        <li><a href="../lexicon.html">GEO Lexicon</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" style="max-width: 700px; padding-top: 3rem;">
+    <article style="padding: 2rem; border: 1px solid rgba(255,255,255,0.1);">
+      <header style="margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 1.5rem;">
+        <p style="font-size: 0.9rem; color: var(--pico-primary); text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Technical Brief // 01</p>
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem; line-height: 1.15;">How AI Search Engines Resolve Physician Entities</h1>
+        <p style="color: var(--pico-muted-color); font-size: 0.9rem; margin-bottom: 0;">
+          Published May 25, 2026 • By <a href="https://www.linkedin.com/in/jimmyepp/" target="_blank" rel="noopener" style="color: var(--pico-primary); text-decoration: none; font-weight: 500;">Jimmy Epp</a>
+        </p>
+      </header>
+
+      <p>
+        When a patient asks an AI engine like ChatGPT, Perplexity, or Google AI Overviews to find a specialist—for example, <em>"Find a pediatric cardiologist in Dallas who handles complex valve anomalies"</em>—the algorithm does not guess based entirely on its historical training data. It performs an active, dual-layer synthesis. 
+      </p>
+      
+      <p>
+        To understand how AI evaluates your practice, you must understand the <strong>Iceberg Principle</strong> of algorithmic search. There is no secret background check occurring behind the scenes; the machine is simply executing an open, structural verification process across data points that most practitioners leave completely unmanaged.
+      </p>
+
+      <h3>The Iceberg Framework: Surface SEO vs. Deep Validation</h3>
+      <p>
+        Traditional SEO lives entirely at the surface—the visible tip of the iceberg. This includes your website’s keywords, blog content, page speeds, and basic metadata. While surface content tells the AI what you <em>claim</em> to do, modern engines refuse to take your website’s word at face value. 
+      </p>
+      <p>
+        Instead, the algorithm dives immediately beneath the surface to cross-reference and validate those claims against highly authoritative institutional indexes. This submerged layer consists of registries you rarely look at: Federal NPI databases (NPPES), state licensing boards, university health grids, insurance provider networks, and massive directories like WebMD, Healthgrades, and Yelp.
+      </p>
+
+      <h3>The Underlying Mechanics: RAG and Entity Resolution</h3>
+      <p>
+        Under the hood, this systematic verification relies on two interconnected processes: <strong>Retrieval-Augmented Generation (RAG)</strong> and <strong>Entity Resolution</strong>. The pipeline executes in three precise steps:
+      </p>
+      
+      <ol>
+        <li>
+          <strong>The RAG Pipeline:</strong> When the query is processed, the AI engine performs a traditional background search to pull context. Because government registries and major medical networks hold near-absolute domain authority, they automatically fill up the top slots of the retrieval web alongside your primary website.
+        </li>
+        <li>
+          <strong>The LLM Synthesis:</strong> The Large Language Model reads all of these distinct data snippets simultaneously, treating your practice not as a text link, but as an "entity"—a singular node that should connect matching facts.
+        </li>
+        <li>
+          <strong>The Entity Resolution Problem:</strong> If your website lists a current clinic address, but your federal NPI registry still reflects an old billing office, and your Healthgrades profile lists conflicting sub-specialties, the AI hits an identity contradiction.
+        </li>
+      </ol>
+
+      <blockquote>
+        <strong>The Consequence of Contradiction:</strong> Because LLMs are probabilistic engines designed to minimize error, a data conflict forces them to protect the user. They will either <strong>hallucinate</strong> (blending the conflicting entries into incorrect, corrupted details) or, far more commonly, they will <strong>omit</strong> your practice entirely, defaulting instead to a competitor whose surface and subsurface data layers match perfectly.
+      </blockquote>
+
+      <h3>Data Integrity Management for the AI Age</h3>
+      <p>
+        Solving AI invisibility is not a matter of tricking a system or buying superficial links. It requires executing aggressive data integrity management across your entire data footprint. 
+      </p>
+      <p>
+        Independent surgeons and specialist clinics frequently update their physical locations, insurance panels, and clinical trial involvements. They meticulously update their homepage but completely neglect the structural registries underneath. 
+      </p>
+      <p>
+        By deploying highly structured JSON-LD Schema markup natively on your site, you explicitly command the AI crawler how to link the tip of your iceberg to the base. You tell the machine: <em>"This specific website belongs to the unique physician entity registered under NPI #1234567890, who operates at coordinates X and is validated by hospital network Y."</em> This turns fragmented background mentions into a unified, undeniable vector of truth that AI models can confidently recommend.
+      </p>
+
+      <footer style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08);">
+        <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Is your practice fragmented underwater?</h4>
+        <p style="font-size: 0.9rem; color: var(--pico-muted-color);">We audit your submerged institutional data layers to ensure absolute algorithmic consensus.</p>
+        <a href="../index.html#contact" role="button" style="width: 100%;">Request an Entity Audit</a>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="container" style="padding-top: 3rem; padding-bottom: 3rem; text-align: center; color: var(--pico-muted-color); font-size: 0.8rem;">
+    <p>&copy; 2026 Graph &amp; Node LLC. Establishing the definitive truth for medical practitioners.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+# Graph & Node GEO & SEO Lexicon (Index)
+> The authoritative index mapping generative search mechanics, Retrieval-Augmented Generation (RAG) parameters, and clinical entity optimization strategies.
+
+Full definitions and strategic context are available in [llms-full.txt](https://graphandnode.com/llms-full.txt).
+
+## Retrieval & RAG
+
+- [Dense Retrieval Architecture](https://graphandnode.com/lexicon.html#dense-retrieval-architecture): The database and retrieval pipeline structure utilizing vector databases, embedding indices, and similarity calculations to source contexts for RAG systems.
+- [Fanout Query Alignment (FQA)](https://graphandnode.com/lexicon.html#fanout-query-alignment): The process of optimizing content structures to match the generated sub-questions (fanout queries) that an LLM constructs during its internal multi-step reasoning phase.
+- [Hybrid Retrieval](https://graphandnode.com/lexicon.html#hybrid-retrieval): A search retrieval architecture that combines dense vector similarity scores with sparse lexical keyword matches.
+- [Information Gain](https://graphandnode.com/lexicon.html#information-gain): The mathematical measure of unique, net-new facts and data points introduced by a document relative to the baseline training corpus of the LLM.
+- [Latent Intent Projection](https://graphandnode.com/lexicon.html#latent-intent-projection): The mathematical process of mapping a user's initial query string to underlying semantic intent vectors to intercept LLM-generated background rephrasings.
+- [Latent Multi-Query Event](https://graphandnode.com/lexicon.html#latent-multi-query-event): The operational moment where fanned-out sub-queries are executed concurrently across vector stores, database APIs, and knowledge graphs.
+- [Length-Agnostic Retrieval Efficacy (LARE)](https://graphandnode.com/lexicon.html#length-agnostic-retrieval): The ability of an information retrieval system to extract and cite highly relevant text passages regardless of the total length or word count of the host webpage.
+- [Lost in the Middle (Position Bias)](https://graphandnode.com/lexicon.html#lost-in-the-middle): A RAG vulnerability where transformer models exhibit high recall accuracy at the boundaries of the context window but fail in the middle.
+- [Markup-Retriever Misalignment (MRM)](https://graphandnode.com/lexicon.html#markup-retriever-misalignment): The divergence in parser processing where an LLM retriever relies directly on raw markdown, HTML text, or paragraph embeddings rather than structured metadata arrays.
+- [Micro-Passage Relevance (MPR)](https://graphandnode.com/lexicon.html#micro-passage-relevance): The search engine indexing methodology that breaks web pages into small semantic chunks (passages) for vector comparison, ensuring that the relevance score is calculated based on the matching chunk.
+- [Probabilistic Search](https://graphandnode.com/lexicon.html#probabilistic-search): Reframing search engine optimization from securing guaranteed ranking positions to maximizing the statistical probability that content is selected across shifting, non-deterministic AI retrieval paths.
+- [PROMPTAGATOR (Google Patent)](https://graphandnode.com/lexicon.html#promptagator): A Google patent using LLMs to generate massive quantities of task-specific synthetic training queries from a handful of prompt exemplars.
+- [Query Fan-Out](https://graphandnode.com/lexicon.html#query-fan-out): The search orchestration technique where an LLM decomposes and expands a single user request into multiple parallel semantic sub-queries.
+- [Reciprocal Rank Fusion (RRF)](https://graphandnode.com/lexicon.html#reciprocal-rank-fusion): An algorithmic sorting technique that combines the rankings of multiple separate retrieval runs to synthesize a singular, prioritized list of search results.
+- [Relevance Engineering (r19g)](https://graphandnode.com/lexicon.html#relevance-engineering): An optimization framework abandoning domain-level metrics in favor of passage-level semantic fragmenting, aligning specific text chunks with dense vector retrieval systems.
+- [Retrieval Consensus Divergence (RCD)](https://graphandnode.com/lexicon.html#retrieval-consensus-divergence): The phenomenon where two distinct retrieval-augmented generation (RAG) systems produce semantically equivalent conclusions (high semantic similarity) using highly disjoint sets of source URLs (low citation overlap).
+- [Retrieval-Augmented Search (RAS)](https://graphandnode.com/lexicon.html#retrieval-augmented-search): A search architecture combining database retrieval systems with Large Language Models, supplying the model with external context before response generation.
+- [Semantic Content Anchoring (SCA)](https://graphandnode.com/lexicon.html#semantic-content-anchoring): The stability of the underlying core sentiment, intent, and informational output of an AI search overview, despite high volatility in generated wording and citations.
+- [Snippet-Level Gatekeeping (SLG)](https://graphandnode.com/lexicon.html#snippet-level-gatekeeping): The preliminary filtering process where a search agent's retrieval model evaluates the relevance of a page based solely on its title, URL, and metadata snippet before deciding to index or fetch the full webpage.
+- [Synthetic Query Types](https://graphandnode.com/lexicon.html#synthetic-query-generation): The categories of search variations generated by sequence-to-sequence expansion models to widen search coverage.
+- [Vector Embeddings](https://graphandnode.com/lexicon.html#vector-embeddings): High-dimensional mathematical coordinates representing the semantic meaning of words, sentences, or paragraphs, processed through neural transformer architectures.
+
+## Entity & Graph
+
+- [Conversational Entity Density (CED)](https://graphandnode.com/lexicon.html#conversational-entity-density): The average concentration of recognized named entities (brands, locations, clinical terms) per unit of text length within an LLM search response.
+- [Domain-Page Authority Decoupling](https://graphandnode.com/lexicon.html#domain-page-decoupling): The phenomenon in generative retrievers where a page's citation likelihood is strongly correlated with its parent domain's overall authority, showing minimal correlation with page backlinks.
+- [Entity Recognition Pipeline](https://graphandnode.com/lexicon.html#entity-recognition-pipeline): The sequence of machine learning checks used to identify, associate, and verify a brand entity before granting a search citation.
+- [Entity SEO](https://graphandnode.com/lexicon.html#entity-seo): Structuring a brand's properties, profiles, and authors as distinct semantic entities in global knowledge systems rather than simple text string matches.
+- [Hidden Gems & UGC](https://graphandnode.com/lexicon.html#hidden-gems-and-ugc): The search integration algorithm prioritizing first-hand human experiences, user-generated content (UGC), and forum opinions over corporate copywriting.
+- [Knowledge Graph](https://graphandnode.com/lexicon.html#knowledge-graph): A network of real-world entities (people, places, things) and their relationships, serving as a clean dataset for search engines to resolve identity.
+- [NavBoost & Glue (Google Leak)](https://graphandnode.com/lexicon.html#navboost-and-glue): Google's internal search scoring systems that utilize real user clickstream logs, hover behaviors, and scroll actions to adjust search results.
+- [Non-Influenceable Citation Dominance](https://graphandnode.com/lexicon.html#non-influenceable-citation): The concentration of citations in LLM search responses that point to open-knowledge directories, app store listings, or non-commercial platforms.
+- [Semantic Triples](https://graphandnode.com/lexicon.html#semantic-triples): Structuring sentence patterns around explicit subject-predicate-object relationships to boost vector retrieval accuracy.
+- [Structured Data Neutrality (SDN)](https://graphandnode.com/lexicon.html#structured-data-neutrality): The state where structured markup (such as JSON-LD schema) fails to act as a direct citation lever or ranking boost in LLM retrieval pipelines.
+- [Thematic Search (Google Patent)](https://graphandnode.com/lexicon.html#thematic-search): Google search architecture grouping retrieved passage summaries into conceptual 'themes' to dictate multi-modal UI header layouts.
+
+## Synthesis & AEO
+
+- [Answer Engine Optimization (AEO)](https://graphandnode.com/lexicon.html#answer-engine-optimization): Structuring and formatting content for direct, zero-click answer synthesis, recognizing that modern generative search engines terminate the user journey on the interface.
+- [Brand-Agnostic Retrieval Bias (BARB)](https://graphandnode.com/lexicon.html#brand-agnostic-retrieval): The tendency of AI search engines to trigger generative summaries 1.9x more frequently for non-branded queries than for branded queries.
+- [Conversational Traffic Retentiveness (CTR-R)](https://graphandnode.com/lexicon.html#conversational-retentiveness): The structural property of conversational AI systems that retains users within the platform chat window, resulting in a click-through rate (CTR) to source websites that is up to 96% lower than that of traditional search.
+- [Generative Engine Optimization (GEO)](https://graphandnode.com/lexicon.html#generative-engine-optimization): The practice of structuring content, entities, and authority signals so generative AI systems can retrieve, trust, and cite a source.
+- [Generative Search Optimization (GSO)](https://graphandnode.com/lexicon.html#generative-search-optimization): The evolution of search optimization combining traditional organic ranking signals, schema metadata, and geo-local entities to secure citations in generative answer layouts.
+- [Informational Intent Propensity (IIP)](https://graphandnode.com/lexicon.html#informational-intent-propensity): The high probability that a search query containing informational modifiers or long-tail structures will trigger a generative AI overview instead of standard SERP components.
+- [Intent Pre-Emption Rate (IPR)](https://graphandnode.com/lexicon.html#intent-pre-emption-rate): The rate at which an AI Overview answers a user's question directly on the SERP, eliminating the need for the user to navigate to any external source site.
+- [Large Language Model Optimization (LLMO)](https://graphandnode.com/lexicon.html#llm-optimization): Technical alignment of content with machine learning tokenization models, LLM vocabulary matrices, and generative SERP co-occurrence patterns.
+- [Linguistic Citation Monopoly (LCM)](https://graphandnode.com/lexicon.html#linguistic-citation-monopoly): The concentration of generative AI overviews within a single language (e.g. English representing >50% of global overviews).
+- [Listicle Aggregation Primacy (LAP)](https://graphandnode.com/lexicon.html#listicle-aggregation-primacy): The systematic bias of LLM search retrievers toward structured comparisons, rankings, and listicle formats, which allow the model to extract comparative features.
+- [llms.txt Metadata](https://graphandnode.com/lexicon.html#llms-txt-metadata): Deploying a standardized, markdown-formatted text file at the root of a domain to present context-optimized content directory paths directly to LLM crawlers.
+- [Prompt-based Optimization](https://graphandnode.com/lexicon.html#prompt-based-optimization): Structuring online content so it aligns with the common prompt patterns and extraction queries used by LLM agents during RAG summarization.
+- [Regional Overview Density (ROD)](https://graphandnode.com/lexicon.html#regional-overview-density): The percentage of search queries in a specific country or geographic region that trigger a generative AI overview.
+- [Stateful Chat (Google Patent)](https://graphandnode.com/lexicon.html#stateful-chat): Continuous session tracking systems mapping query history, temporal data, and user signals to generate background context embeddings.
+
+## Metrics & Tracking
+
+- [AI Signal Rate](https://graphandnode.com/lexicon.html#ai-signal-rate): A KPI measuring the frequency with which a specific brand is explicitly cited, linked, or mentioned within generative search summaries.
+- [Answer Accuracy Rate](https://graphandnode.com/lexicon.html#answer-accuracy-rate): A compliance metric grading the factual correctness of generative search outputs regarding a brand's credentials and services.
+- [Bot-Induced Impression Inflation (BIII)](https://graphandnode.com/lexicon.html#bot-impression-inflation): The distortion of organic search data where pages ranking beyond position 30 receive significant impressions (up to 29%) but zero clicks, caused by automated web crawlers.
+- [Citation Advantage](https://graphandnode.com/lexicon.html#citation-advantage): The measurable lift in click-through rate (CTR) achieved by a brand when it is explicitly cited inside a generative search summary.
+- [Citation Churn Volatility (CCV)](https://graphandnode.com/lexicon.html#citation-churn-volatility): The frequency and rate at which the specific URLs cited in a generative search response fluctuate over time, while semantic meaning remains constant.
+- [Citation Decay by Tier](https://graphandnode.com/lexicon.html#citation-decay-by-tier): The volatility rate at which online citations lose credibility and are cycled out of model databases, categorized by domain authority tiers.
+- [Citation Overlap](https://graphandnode.com/lexicon.html#citation-overlap): The percentage of cited domains that match between traditional organic search rankings and generative AI summaries.
+- [Content Recency Bias](https://graphandnode.com/lexicon.html#content-recency): The algorithmic preference of search bots to retrieve and cite recently updated content nodes over older, static assets.
+- [Content Volume Neutrality (CVN)](https://graphandnode.com/lexicon.html#content-volume-neutrality): The architectural trait of LLM retrievers where total index size (page count) has a near-zero correlation with AI visibility, differing from legacy search engines.
+- [First-Page Link Monopoly (FPLM)](https://graphandnode.com/lexicon.html#first-page-link-monopoly): The extreme concentration of search engine click activity restricted to the first page (top 10 results) of search results, rendering impressions beyond position 10 virtually worthless.
+- [Non-Ranking Citation Capture (NRCC)](https://graphandnode.com/lexicon.html#non-ranking-citation-capture): The ability of a webpage or media asset to secure citations in generative AI search results despite not ranking in the top 100 traditional organic search results.
+- [Organic Rank-Citation Decoupling (ORCD)](https://graphandnode.com/lexicon.html#organic-rank-decoupling): The divergence in ranking mechanics where traditional search signals do not guarantee a generative overview citation, resulting in over 60% of AIO citations pulling from outside the top 10.
+- [Referral Disparity Index (RDI)](https://graphandnode.com/lexicon.html#referral-disparity-index): The ratio comparing the volume of referral traffic sent to external websites per search query between a traditional search engine and a conversational engine.
+- [Temporal Citation Decay (TCD)](https://graphandnode.com/lexicon.html#temporal-citation-decay): The rate at which the likelihood of a page being cited by a search agent decreases due to lack of recent updates, driven by freshness filters.
+- [Traffic Cannibalization](https://graphandnode.com/lexicon.html#traffic-cannibalization): The decrease in referral clicks from organic search results caused by generative engines synthesizing answers directly in the user interface.
+- [Zero-Click CTR Degradation (ZCCD)](https://graphandnode.com/lexicon.html#zero-click-ctr-degradation): The accelerating decline in click-through rates for position-one organic listings caused by the presence of a generative AI summary that satisfies the searcher's intent above the fold.
+- [Zero-Click Performance Metrics](https://graphandnode.com/lexicon.html#zero-click-performance-metrics): KPIs tracking brand visibility, impressions, and user interactions that occur entirely within synthesized search results without a user clicking through to the website.
+
+## Enterprise Strategy
+
+- [Agentic SEO Workflow](https://graphandnode.com/lexicon.html#agentic-seo-workflow): An autonomous, continuous optimization loop that utilizes AI agents to index, triage, patch, and review site data.
+- [AI Controllability](https://graphandnode.com/lexicon.html#ai-controllability): The degree of influence a brand can exert over generative search outputs through the deliberate structuring of primary, secondary, and tertiary public data sources.
+- [Brand Canon](https://graphandnode.com/lexicon.html#brand-canon): The verified, canonical dataset representing the official factual truth of a brand, used to train models and audit hallucinated search results.
+- [Generative AI Optimization (GAIO)](https://graphandnode.com/lexicon.html#generative-ai-optimization): Enterprise-grade strategy focusing on brand narrative protection, hallucination tracking, and sentiment steering across LLM environments.
+- [Grounding with Bing Search](https://graphandnode.com/lexicon.html#grounding-with-bing-search): Azure AI developer capabilities allowing LLM agents to break out of static parameter weights and incorporate real-time, public web data.
+- [Multi-Platform Authority Co-citation](https://graphandnode.com/lexicon.html#multi-platform-authority): The practice of co-mentioning a brand alongside authoritative entities across cross-domain platforms (especially YouTube and high-DR portals) to influence vector embedding associations.
+

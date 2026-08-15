@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://graphandnode.com/#organization",
+  "name": "Graph and Node",
+  "legalName": "Graph and Node LLC",
+  "description": "AI Engine Optimization (AEO) and Knowledge Graph engineering for healthcare specialists. We optimize physicians, surgeons, and medical clinics to ensure they are cited accurately in AI search systems like ChatGPT, Gemini, and Perplexity.",
+  "url": "https://graphandnode.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://graphandnode.com/logo.svg",
+    "width": "512",
+    "height": "512"
+  },
+  "image": "https://graphandnode.com/og-image.png",
+  "sameAs": [
+    "https://www.linkedin.com/company/graphandnode"
+  ],
+  "knowsAbout": [
+    "AI Engine Optimization",
+    "AEO for Healthcare",
+    "Search Generative Experience",
+    "LLM Recommendations",
+    "Medical Schema Markup",
+    "Entity Authority",
+    "Knowledge Graphs"
+  ],
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "offers": {
+    "@type": "OfferCatalog",
+    "name": "AI Readiness Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AI Visibility Audit",
+          "description": "Comprehensive diagnostic analysis of how major Large Language Models (LLMs) represent and recommend a physician."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Knowledge Graph Synthesis",
+          "description": "Generation of machine-readable entity schemas, RDF graphs, and verified metadata connections for medical credentials."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Clinical Citation Networks",
+          "description": "Establishing trusted connections between a provider's medical publications, hospital appointments, clinical trials, and reviews."
+        }
+      }
+    ]
+  }
+}
