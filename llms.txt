@@ -3,6 +3,8 @@
 
 Full definitions and strategic context are available in [llms-full.txt](https://graphandnode.com/llms-full.txt).
 
+- [It’s the Brand, Stupid: The Post-Commoditization Survival Guide](https://graphandnode.com/blog/its-the-brand-stupid.html): An investigation into why automation and AI make brand authority the only non-fungible asset in a market of commoditized ideas.
+
 ## Retrieval & RAG
 
 - [Dense Retrieval Architecture](https://graphandnode.com/lexicon.html#dense-retrieval-architecture): The database and retrieval pipeline structure utilizing vector databases, embedding indices, and similarity calculations to source contexts for RAG systems.
@@ -86,4 +88,3 @@ Full definitions and strategic context are available in [llms-full.txt](https://
 - [Generative AI Optimization (GAIO)](https://graphandnode.com/lexicon.html#generative-ai-optimization): Enterprise-grade strategy focusing on brand narrative protection, hallucination tracking, and sentiment steering across LLM environments.
 - [Grounding with Bing Search](https://graphandnode.com/lexicon.html#grounding-with-bing-search): Azure AI developer capabilities allowing LLM agents to break out of static parameter weights and incorporate real-time, public web data.
 - [Multi-Platform Authority Co-citation](https://graphandnode.com/lexicon.html#multi-platform-authority): The practice of co-mentioning a brand alongside authoritative entities across cross-domain platforms (especially YouTube and high-DR portals) to influence vector embedding associations.
-
