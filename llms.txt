@@ -89,3 +89,30 @@ Full definitions and strategic context are available in [llms-full.txt](https://
 - [Generative AI Optimization (GAIO)](https://graphandnode.com/lexicon.html#generative-ai-optimization): Enterprise-grade strategy focusing on brand narrative protection, hallucination tracking, and sentiment steering across LLM environments.
 - [Grounding with Bing Search](https://graphandnode.com/lexicon.html#grounding-with-bing-search): Azure AI developer capabilities allowing LLM agents to break out of static parameter weights and incorporate real-time, public web data.
 - [Multi-Platform Authority Co-citation](https://graphandnode.com/lexicon.html#multi-platform-authority): The practice of co-mentioning a brand alongside authoritative entities across cross-domain platforms (especially YouTube and high-DR portals) to influence vector embedding associations.
+
+---
+
+## Blog Posts & Technical Briefings
+
+- [The Brand Erasure Crisis: Measuring the 80% Visibility Collapse in Medical AI Search](https://graphandnode.com/blog/medical-ai-brand-erasure.html): An empirical study on how Generative AI engines synthesize medical content, effectively erasing brand equity for top-of-funnel healthcare queries.
+- [It's the Brand, Stupid: The Post-Commoditization Survival Guide](https://graphandnode.com/blog/its-the-brand-stupid.html): An investigation into why automation and AI make brand authority the only non-fungible asset in a market of commoditized ideas.
+- [The Evidence Layer: Why GEO Requires Primary-Source Validation](https://graphandnode.com/blog/the-evidence-layer-geo.html): An investigation into the 'Evidence Layer'—a structured framework of primary-source validation that anchors LLMs and prevents them from falling back to noisy community data.
+- [How AI Search Engines Resolve Physician Entities](https://graphandnode.com/blog/how-ai-search-resolves-physician-entities.html): A deep dive into Retrieval-Augmented Generation (RAG) and why conflicting NPI registry data and address drift silently remove surgeons and specialists from AI search recommendations.
+
+### Article Summaries
+
+#### 1. The Brand Erasure Crisis: Measuring the 80% Visibility Collapse in Medical AI Search
+**URL:** https://graphandnode.com/blog/medical-ai-brand-erasure.html
+Generative AI engines are no longer just summarizing the web; they are synthesizing it into a brand-agnostic utility, effectively erasing the visual and narrative equity of healthcare content creators. In 80% of top-of-funnel medical queries, Google Gemini provided comprehensive answers without a single brand mention in the primary text. Recent industry data indicates that 82% of health-related queries now trigger an AI Overview, reducing organic CTR by 61%.
+
+#### 2. It's the Brand, Stupid: The Post-Commoditization Survival Guide
+**URL:** https://graphandnode.com/blog/its-the-brand-stupid.html
+An investigation into why automation and generative AI make brand authority the only non-fungible asset in a market flooded with commodity content. When AI can generate infinite synthetic content in seconds, raw content volume loses all value. The only remaining signal LLMs and users trust is verified entity authority and primary source evidence.
+
+#### 3. The Evidence Layer: Why GEO Requires Primary-Source Validation
+**URL:** https://graphandnode.com/blog/the-evidence-layer-geo.html
+Moving beyond social proof to anchor AI search in objective truth. AI search engines seek primary-source validation (accreditations, certifications, regulatory filings, clinical datasets) before trusting an entity. Without a structured Evidence Layer, LLMs fall back to noisy discussion forums or omit the entity entirely.
+
+#### 4. How AI Search Engines Resolve Physician Entities
+**URL:** https://graphandnode.com/blog/how-ai-search-resolves-physician-entities.html
+A deep dive into Retrieval-Augmented Generation (RAG) and Entity Resolution. Conflicting NPI registry data, outdated billing addresses, and unlinked sub-specialty profiles create data contradictions for LLMs, causing them to omit physicians from AI search recommendations in favor of competitors with verified entity consensus.

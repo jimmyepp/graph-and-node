@@ -1,4 +1,36 @@
 User-agent: *
 Allow: /
 
+# AI Crawlers — explicit permission
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Gemini
+Allow: /
+
+# LLM content index
+LLM-Content: https://graphandnode.com/llms.txt
+LLM-Content-Full: https://graphandnode.com/llms-full.txt
+
 Sitemap: https://graphandnode.com/sitemap.xml
