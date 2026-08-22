@@ -3,7 +3,6 @@
 
 Full definitions and strategic context are available in [llms-full.txt](https://graphandnode.com/llms-full.txt).
 
-- [The Brand Erasure Crisis: Measuring the 80% Visibility Collapse in Medical AI Search](https://graphandnode.com/blog/medical-ai-brand-erasure.html): An empirical study on how Generative AI engines synthesize medical content, effectively erasing brand equity for top-of-funnel healthcare queries.
 - [It’s the Brand, Stupid: The Post-Commoditization Survival Guide](https://graphandnode.com/blog/its-the-brand-stupid.html): An investigation into why automation and AI make brand authority the only non-fungible asset in a market of commoditized ideas.
 
 ## Retrieval & RAG
