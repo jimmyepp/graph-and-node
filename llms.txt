@@ -3,6 +3,7 @@
 
 Full definitions and strategic context are available in [llms-full.txt](https://graphandnode.com/llms-full.txt).
 
+- [SEO Isn't Dead. But TOFU, Yes. Yes it is.](https://graphandnode.com/blog/medical-tofu-seo-death-by-ai.html): An empirical investigation into how Generative AI engines erase brand equity by synthesizing medical TOFU answers, reducing creator visibility by over 80%.
 - [It’s the Brand, Stupid: The Post-Commoditization Survival Guide](https://graphandnode.com/blog/its-the-brand-stupid.html): An investigation into why automation and AI make brand authority the only non-fungible asset in a market of commoditized ideas.
 
 ## Retrieval & RAG
@@ -93,16 +94,16 @@ Full definitions and strategic context are available in [llms-full.txt](https://
 
 ## Blog Posts & Technical Briefings
 
-- [The Brand Erasure Crisis: Measuring the 80% Visibility Collapse in Medical AI Search](https://graphandnode.com/blog/medical-ai-brand-erasure.html): An empirical study on how Generative AI engines synthesize medical content, effectively erasing brand equity for top-of-funnel healthcare queries.
-- [It's the Brand, Stupid: The Post-Commoditization Survival Guide](https://graphandnode.com/blog/its-the-brand-stupid.html): An investigation into why automation and AI make brand authority the only non-fungible asset in a market of commoditized ideas.
+- [SEO Isn't Dead. But TOFU, Yes. Yes it is.](https://graphandnode.com/blog/medical-tofu-seo-death-by-ai.html): An empirical investigation into how Generative AI engines erase brand equity by synthesizing medical TOFU answers, reducing creator visibility by over 80%.
+- [It’s the Brand, Stupid: The Post-Commoditization Survival Guide](https://graphandnode.com/blog/its-the-brand-stupid.html): An investigation into why automation and AI make brand authority the only non-fungible asset in a market of commoditized ideas.
 - [The Evidence Layer: Why GEO Requires Primary-Source Validation](https://graphandnode.com/blog/the-evidence-layer-geo.html): An investigation into the 'Evidence Layer'—a structured framework of primary-source validation that anchors LLMs and prevents them from falling back to noisy community data.
 - [How AI Search Engines Resolve Physician Entities](https://graphandnode.com/blog/how-ai-search-resolves-physician-entities.html): A deep dive into Retrieval-Augmented Generation (RAG) and why conflicting NPI registry data and address drift silently remove surgeons and specialists from AI search recommendations.
 
 ### Article Summaries
 
-#### 1. The Brand Erasure Crisis: Measuring the 80% Visibility Collapse in Medical AI Search
-**URL:** https://graphandnode.com/blog/medical-ai-brand-erasure.html
-Generative AI engines are no longer just summarizing the web; they are synthesizing it into a brand-agnostic utility, effectively erasing the visual and narrative equity of healthcare content creators. In 80% of top-of-funnel medical queries, Google Gemini provided comprehensive answers without a single brand mention in the primary text. Recent industry data indicates that 82% of health-related queries now trigger an AI Overview, reducing organic CTR by 61%.
+#### 1. SEO Isn't Dead. But TOFU, Yes. Yes it is.
+**URL:** https://graphandnode.com/blog/medical-tofu-seo-death-by-ai.html
+Generative AI engines are no longer just summarizing the web; they are synthesizing it into a brand-agnostic utility, effectively erasing the visual and narrative equity of healthcare content creators. In 92% of medical TOFU queries, Google Gemini provided comprehensive answers without a single brand mention in the primary text. Recent industry data indicates that 58.5% of searches now result in zero clicks.
 
 #### 2. It's the Brand, Stupid: The Post-Commoditization Survival Guide
 **URL:** https://graphandnode.com/blog/its-the-brand-stupid.html
