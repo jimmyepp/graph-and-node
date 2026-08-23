@@ -19,6 +19,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://graphandnode.com/blog/seo-is-not-dead-tofu-is.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://graphandnode.com/blog/its-the-brand-stupid.html</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -32,6 +38,7 @@
   </url>
   <url>
     <loc>https://graphandnode.com/blog/how-ai-search-resolves-physician-entities.html</loc>
+    <lastmod>2026-05-15</lastmod>
     <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

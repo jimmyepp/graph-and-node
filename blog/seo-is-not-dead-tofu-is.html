@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>SEO is Not Dead. TOFU Is: The Compression of the Messy Middle | Graph &amp; Node</title>
+  <meta name="description" content="An empirical investigation into the death of top-of-funnel brand visibility in the age of AI Search Overviews." />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <header class="container" style="padding-top: 2rem;">
+    <nav>
+      <ul>
+        <li><a href="../index.html" style="font-weight: bold; text-decoration: none;">← Graph &amp; Node</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">Technical Briefings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" style="max-width: 800px; padding-top: 3rem;">
+    <section>
+      <p style="font-size: 0.85rem; color: var(--pico-primary); text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Investigation Report // 05</p>
+      <h1 style="font-size: 2.5rem; line-height: 1.1; margin-bottom: 1.5rem;">SEO is Not Dead. TOFU Is: The Compression of the Messy Middle</h1>
+      
+      <p style="font-size: 1.25rem; color: var(--pico-muted-color); margin-bottom: 2rem;">
+        An empirical study of 30 high-intent informational queries reveals that the "Top of Funnel" is being systematically erased from the brand-discovery journey.
+      </p>
+
+      <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; border-left: 4px solid var(--pico-primary);">
+        <h4 style="margin-bottom: 0.5rem;">Hypothesis Conclusion</h4>
+        <p style="margin-bottom: 0;">
+          <strong>HYPOTHESIS VALIDATED:</strong> Empirical data confirms that in the majority of cases (60%), AI search engines provide comprehensive informational answers without mentioning or attributing specific brands in the primary response text. The "Top of Funnel" (TOFU) as a brand-building vehicle is effectively dead.
+        </p>
+      </div>
+
+      <h2 id="key-takeaways">Key Takeaways</h2>
+      <ul>
+        <li><strong>96.7% Trigger Rate:</strong> Google AI Overviews (AIO) now trigger for nearly all informational health and wellness queries, intercepting the user before they reach a website.</li>
+        <li><strong>60% Brand Erasure:</strong> In 60% of tested queries, the AI response provided a complete answer without mentioning a single brand name, effectively commoditizing the information.</li>
+        <li><strong>The "Messy Middle" Compression:</strong> The traditional journey from "unaware" to "brand-aware" is being bypassed. Users are moving directly from "problem" to "solution" within the search interface.</li>
+        <li><strong>Authority as the Only Lever:</strong> When brands <em>were</em> mentioned (40% of cases), they were exclusively high-authority primary sources like the Mayo Clinic or Mass General Brigham.</li>
+      </ul>
+
+      <h2 id="data-behind-study">The Data Behind this Study</h2>
+      <p>
+        We analyzed 30 live AI search queries across Google AI Overviews and Gemini, focusing on high-volume informational "Top of Funnel" (TOFU) queries in the medical and wellness space. The goal was to determine if these models attribute information to brands or if they present facts as "brand-blind" commodities.
+      </p>
+
+      <h2 id="definitions">Definitions</h2>
+      <ul>
+        <li><strong>TOFU (Top of Funnel):</strong> Informational queries where the user is seeking knowledge or a solution but has not yet identified a specific brand (e.g., "how to treat a burn").</li>
+        <li><strong>Brand-Blind Retrieval:</strong> A state where an AI model provides a factual answer but omits the source brand or entity from the generated prose.</li>
+        <li><strong>AIO (AI Overview):</strong> The synthesized answer block appearing at the top of Google Search results.</li>
+        <li><strong>Category Entry Points (CEPs):</strong> The specific cues or situations that lead a consumer to think of a category (e.g., "I have a burn").</li>
+      </ul>
+
+      <h2 id="experimental-setup">Experimental Setup</h2>
+      <p>
+        The study utilized a randomized set of 30 medical and first-aid queries. Each query was processed through two primary models:
+      </p>
+      <ol>
+        <li><strong>Google AI Overviews (AIO):</strong> Tested for trigger frequency and brand attribution.</li>
+        <li><strong>Gemini (1.5 Pro):</strong> Tested for direct response brand-blindness.</li>
+      </ol>
+      <p>
+        A "Validation" was recorded if the model provided the answer without mentioning a brand in the primary text block.
+      </p>
+
+      <h2 id="findings">Findings</h2>
+      <p>The following table illustrates the performance metrics across the tested models:</p>
+
+      <div class="overflow-auto">
+        <table class="striped">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Google AI Overviews</th>
+              <th>Gemini</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Total Queries</td>
+              <td>30</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Triggered / Success</td>
+              <td>29 (96.7%)</td>
+              <td>18 (60.0%)</td>
+            </tr>
+            <tr>
+              <td>Hypothesis Validated (Brand-Blind)</td>
+              <td><strong>58.6%</strong></td>
+              <td><strong>60.0%</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="case-studies">Raw Evidence &amp; Case Studies</h2>
+
+      <div style="margin-bottom: 2.5rem;">
+        <h3>Case Study 01: The Sprained Ankle</h3>
+        <p><strong>Query:</strong> "First aid steps for a sprained ankle."</p>
+        <blockquote>
+          "Treat a sprained ankle immediately using the R.I.C.E. method: Rest the joint, apply an Ice pack wrapped in a cloth for 15 to 20 minutes, use a snug Compression bandage, and Elevate the foot above your heart..."
+        </blockquote>
+        <p><strong>Analysis:</strong> <strong>Hypothesis Validated.</strong> The response is entirely brand-blind. While the information is accurate, no medical brand (e.g., Johnson &amp; Johnson, Mueller, or a specific hospital) is credited for the protocol. The brand is erased from the discovery phase.</p>
+      </div>
+
+      <div style="margin-bottom: 2.5rem;">
+        <h3>Case Study 02: Type 2 Diabetes Signs</h3>
+        <p><strong>Query:</strong> "What are the early signs of type 2 diabetes?"</p>
+        <blockquote>
+          "Early signs of type 2 diabetes develop slowly and can be very mild. Common warning flags include feeling very thirsty, peeing often (especially at night), feeling tired all the time..."
+        </blockquote>
+        <p><strong>Analysis:</strong> <strong>Hypothesis Validated.</strong> The AI provides a comprehensive list of symptoms. The user's intent is fully satisfied within the search interface. There is zero incentive to click through to a health portal, and no brand is associated with the expertise.</p>
+      </div>
+
+      <div style="margin-bottom: 2.5rem;">
+        <h3>Case Study 03: ACL Recovery (The Exception)</h3>
+        <p><strong>Query:</strong> "What is the recovery time for ACL surgery?"</p>
+        <blockquote>
+          "Recovery after ACL surgery takes 6 to 12 months... You can learn more details from the <strong>Mass General Brigham</strong> guide on reconstruction."
+        </blockquote>
+        <p><strong>Analysis:</strong> <strong>Hypothesis Contradicted.</strong> In this instance, the AI explicitly cites a high-authority medical institution. This suggests that for complex surgical timelines, models still rely on "Brand Authority" as a grounding signal. Only the top 1% of brands survive the TOFU erasure.</p>
+      </div>
+
+      <h2 id="industry-context">Deep Research &amp; Industry Context</h2>
+      <p>
+        The shift toward zero-click search is not merely a change in user behavior; it is a structural transformation of the marketing funnel. According to research from <strong>Pew Research</strong>, a majority of Americans now read AI summaries at the top of search results, often bypassing the traditional list of links entirely.
+      </p>
+      <p>
+        This phenomenon aligns with the concept of the "Messy Middle" described by <strong>Google's</strong> own consumer behavior research. The space between triggers and purchase is where consumers explore and evaluate. By providing the "exploration" phase directly in the AIO, search engines are compressing the funnel.
+      </p>
+      <p>
+        Data from <strong>Ahrefs</strong> and <strong>BrightEdge</strong> indicates that while traditional SEO metrics like "keyword rankings" remain relevant for bottom-of-funnel (BOFU) queries, TOFU visibility is increasingly dependent on <strong>Category Entry Points (CEPs)</strong>. As <strong>Ehrenberg-Bass</strong> marketing science suggests, brands must be mentally available when a need arises. If the AI is the one answering the need, the brand must be the one the AI <em>trusts</em> to provide that answer.
+      </p>
+
+      <h2 id="brand-strategy">What this means for your brand</h2>
+      <p>
+        If 60% of TOFU queries are brand-blind, the strategy of "content for the sake of traffic" is obsolete. To survive the erasure of the Top of Funnel, brands must:
+      </p>
+      <ol>
+        <li><strong>Optimize for Authority, Not Traffic:</strong> Focus on becoming the "Grounding Source" for AI models. If you aren't the primary source (like Mayo Clinic), you won't be mentioned.</li>
+        <li><strong>Pivot to BOFU and MOFU:</strong> Double down on queries where the user <em>expects</em> a brand (e.g., "best knee brace for ACL recovery" vs "ACL recovery time").</li>
+        <li><strong>Measure Brand Mentions, Not Clicks:</strong> In a zero-click world, your success is measured by how often the AI cites your entity as the authority behind the facts.</li>
+      </ol>
+
+      <hr style="margin-top: 3rem; margin-bottom: 2rem;" />
+
+      <h3 id="citations">Citations &amp; Primary Sources</h3>
+      <ul style="font-size: 0.85rem; color: var(--pico-muted-color);">
+        <li>Ahrefs: <a href="https://ahrefs.com/ai-overviews-tracker">AI Overviews Tracker &amp; Brand Correlation</a></li>
+        <li>Pew Research: <a href="https://www.pewresearch.org/chart/a-majority-of-americans-say-they-read-ai-summaries-at-the-top-of-search-results/">AI Summary Reading Habits (2025)</a></li>
+        <li>BrightEdge: <a href="https://www.brightedge.com/resources/weekly-ai-search-insights/ai-auto-purchase-journey-branded-vs-non-branded-prompts">AI Purchase Journey: Branded vs. Non-Branded</a></li>
+        <li>Think with Google: <a href="https://www.thinkwithgoogle.com/_qs/documents/9998/Decoding_Decisions_The_Messy_Middle_of_Purchase_Behavior.pdf">Decoding Decisions: The Messy Middle</a></li>
+        <li>Ehrenberg-Bass Institute: <a href="https://marketingscience.info/learn-with-us/commercial-research/identifying-and-prioritising-category-entry-points">Identifying Category Entry Points</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container" style="padding-top: 5rem; padding-bottom: 3rem; text-align: center; color: var(--pico-muted-color); font-size: 0.8rem;">
+    <p>&copy; 2026 Graph &amp; Node LLC. Empirical Research for the Generative Age.</p>
+  </footer>
+
+</body>
+</html>
