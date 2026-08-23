@@ -46,7 +46,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 0.75rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.75rem;
       background: #0d1117;
       padding: 1rem;
       border-radius: 8px;
@@ -90,7 +90,7 @@
       <div id="header-research">
         <h1 style="font-size: 1.85rem; margin-bottom: 0.5rem;">Submit AI Research Study</h1>
         <p style="color: #8b949e; margin-bottom: 2rem;">
-          Define a hypothesis and target AI engines. The pipeline runs a 30-query empirical study, records raw outputs to Firestore, performs Perplexity Deep Research, and writes a peer-reviewed Investigation Report.
+          Define a hypothesis and target AI engines. The pipeline runs a 30-query empirical study, records raw outputs to Firestore, performs automatic Perplexity Deep Research, and writes a peer-reviewed Investigation Report.
         </p>
       </div>
 
@@ -114,7 +114,7 @@
           </label>
           <input type="text" id="hypothesis" name="hypothesis" placeholder="e.g. Non-branded medical queries trigger Google AI Overviews over 80% of the time, replacing brand URLs." />
 
-          <label>Target AI Search Engines &amp; Models</label>
+          <label>Target 30-Query Test Models</label>
           <div class="engine-group">
             <label class="engine-checkbox">
               <input type="checkbox" name="engines" value="google_aio" checked />
@@ -125,10 +125,6 @@
               Gemini 3 Flash
             </label>
             <label class="engine-checkbox">
-              <input type="checkbox" name="engines" value="perplexity" checked />
-              Perplexity Deep Research
-            </label>
-            <label class="engine-checkbox">
               <input type="checkbox" name="engines" value="openai" />
               OpenAI GPT-4o
             </label>
@@ -137,6 +133,9 @@
               Claude 3.5 Sonnet
             </label>
           </div>
+          <small style="color: #8b949e; display: block; margin-bottom: 1.5rem;">
+            ℹ️ <strong>Perplexity Deep Research</strong> runs automatically in the background on every study to gather multi-source web citations.
+          </small>
         </div>
 
         <label for="raw_notes">Raw Notes &amp; Observations</label>
@@ -208,7 +207,7 @@
             await db.collection('research_ideas').add({
               topic: topic,
               hypothesis: hypothesis || 'No specific hypothesis provided',
-              target_engines: checkedEngines.length ? checkedEngines : ['google_aio', 'gemini', 'perplexity'],
+              target_engines: checkedEngines.length ? checkedEngines : ['google_aio', 'gemini'],
               raw_notes: rawNotes,
               status: 'pending',
               created_at: firebase.firestore.FieldValue.serverTimestamp(),
@@ -219,7 +218,7 @@
             statusMessage.style.backgroundColor = '#1f6feb22';
             statusMessage.style.border = '1px solid #388bfd';
             statusMessage.style.color = '#58a6ff';
-            statusMessage.innerHTML = '✅ <strong>Empirical Research Study Submitted!</strong><br/>The Database-First agent will run 30 queries, record raw responses to Firestore, fetch Perplexity Deep Research, and generate the report.';
+            statusMessage.innerHTML = '✅ <strong>Empirical Research Study Submitted!</strong><br/>The Database-First agent will run 30 queries, record raw responses to Firestore, run Perplexity Deep Research in the background, and generate the report.';
           } else {
             await db.collection('blog_ideas').add({
               topic: topic,
