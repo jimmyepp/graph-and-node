@@ -3,7 +3,6 @@
 
 Full definitions and strategic context are available in [llms-full.txt](https://graphandnode.com/llms-full.txt).
 
-- [MOFU Is Also Effected by AI Search: The Selective Collapse of the Messy Middle](https://graphandnode.com/blog/mofu-ai-search-impact.html): An empirical study of 30 complex healthcare queries reveals how AI search engines are selectively collapsing the Middle of the Funnel (MOFU).
 - [SEO is Not Dead. TOFU Is: The Compression of the Messy Middle](https://graphandnode.com/blog/seo-is-not-dead-tofu-is.html): An empirical study of 30 high-intent informational queries reveals that the "Top of Funnel" is being systematically erased from the brand-discovery journey.
 - [It’s the Brand, Stupid: The Post-Commoditization Survival Guide](https://graphandnode.com/blog/its-the-brand-stupid.html): An investigation into why automation and AI make brand authority the only non-fungible asset in a market of commoditized ideas.
 
@@ -95,7 +94,6 @@ Full definitions and strategic context are available in [llms-full.txt](https://
 
 ## Blog Posts & Technical Briefings
 
-- [MOFU Is Also Effected by AI Search: The Selective Collapse of the Messy Middle](https://graphandnode.com/blog/mofu-ai-search-impact.html): An empirical study of 30 complex healthcare queries reveals how AI search engines are selectively collapsing the Middle of the Funnel (MOFU).
 - [SEO is Not Dead. TOFU Is: The Compression of the Messy Middle](https://graphandnode.com/blog/seo-is-not-dead-tofu-is.html): An empirical study of 30 high-intent informational queries reveals that the "Top of Funnel" is being systematically erased from the brand-discovery journey.
 - [It’s the Brand, Stupid: The Post-Commoditization Survival Guide](https://graphandnode.com/blog/its-the-brand-stupid.html): An investigation into why automation and AI make brand authority the only non-fungible asset in a market flooded with commodity content.
 - [The Evidence Layer: Why GEO Requires Primary-Source Validation](https://graphandnode.com/blog/the-evidence-layer-geo.html): An investigation into the 'Evidence Layer'—a structured framework of primary-source validation that anchors LLMs and prevents them from falling back to noisy community data.
@@ -103,11 +101,7 @@ Full definitions and strategic context are available in [llms-full.txt](https://
 
 ### Article Summaries
 
-#### 1. MOFU Is Also Effected by AI Search: The Selective Collapse of the Messy Middle
-**URL:** https://graphandnode.com/blog/mofu-ai-search-impact.html
-An empirical study of 30 complex healthcare queries reveals how AI search engines are selectively collapsing the Middle of the Funnel (MOFU). While 96.7% of queries trigger an AI Overview, journey-ending synthesis is highly selective, occurring in only 34.5% of cases.
-
-#### 2. SEO is Not Dead. TOFU Is: The Compression of the Messy Middle
+#### 1. SEO is Not Dead. TOFU Is: The Compression of the Messy Middle
 **URL:** https://graphandnode.com/blog/seo-is-not-dead-tofu-is.html
 An empirical study of 30 high-intent informational queries reveals that the "Top of Funnel" is being systematically erased from the brand-discovery journey. In 60% of cases, AI models provide comprehensive answers without brand attribution, effectively commoditizing informational content.
 
