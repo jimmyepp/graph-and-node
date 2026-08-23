@@ -3,29 +3,150 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  <title>Blog Ideas | Graph &amp; Node</title>
+  <title>Research & Blog Submission | Graph &amp; Node</title>
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: #0e1117;
+      color: #e6edf3;
+    }
+    .submission-card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 2.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .nav-tabs {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 0.75rem;
+    }
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: #8b949e;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+    .tab-btn.active {
+      background: #21262d;
+      color: #58a6ff;
+      border-bottom: 2px solid #58a6ff;
+    }
+    .engine-group {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      background: #0d1117;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #30363d;
+    }
+    .engine-checkbox {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    .engine-checkbox input {
+      margin-bottom: 0;
+    }
+  </style>
 </head>
 <body>
 
-  <main class="container" style="max-width: 600px; padding-top: 3rem;">
-    <h1 style="font-size: 2.25rem;">Submit Blog Idea</h1>
-    <p style="color: var(--pico-muted-color); margin-bottom: 2rem;">Feed raw notes into the automated blogging pipeline.</p>
+  <header class="container" style="padding-top: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #30363d;">
+    <nav>
+      <ul>
+        <li><a href="/" style="font-weight: 700; color: #f0f6fc; font-size: 1.25rem;">Graph &amp; Node</a></li>
+      </ul>
+      <ul>
+        <li><a href="/blog/" style="color: #8b949e;">Blog</a></li>
+        <li><a href="/lexicon.html" style="color: #8b949e;">GEO Lexicon</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <form id="idea-form">
-      <label for="topic">Topic / Title Concept</label>
-      <input type="text" id="topic" name="topic" required placeholder="e.g. Entity Resolution in Healthcare SEO" />
-
-      <label for="raw_notes">Raw Notes & Thoughts</label>
-      <textarea id="raw_notes" name="raw_notes" rows="6" required placeholder="Paste your unformatted notes, insights, or links here..."></textarea>
-
-      <button type="submit" id="submit-btn" style="margin-top: 1rem;">Submit Idea</button>
-    </form>
+  <main class="container" style="max-width: 720px; padding-top: 3rem; padding-bottom: 4rem;">
     
-    <div id="status-message" style="margin-top: 1rem; padding: 1rem; border-radius: 4px; display: none;"></div>
+    <div class="submission-card">
+      <div class="nav-tabs">
+        <button type="button" class="tab-btn active" id="tab-research" onclick="switchTab('research')">🔬 Empirical AI Study</button>
+        <button type="button" class="tab-btn" id="tab-blog" onclick="switchTab('blog')">📝 Standard Blog Brief</button>
+      </div>
+
+      <div id="header-research">
+        <h1 style="font-size: 1.85rem; margin-bottom: 0.5rem;">Submit AI Research Study</h1>
+        <p style="color: #8b949e; margin-bottom: 2rem;">
+          Define a hypothesis and target AI engines. The pipeline runs a 30-query empirical study, records raw outputs to Firestore, performs Perplexity Deep Research, and writes a peer-reviewed Investigation Report.
+        </p>
+      </div>
+
+      <div id="header-blog" style="display: none;">
+        <h1 style="font-size: 1.85rem; margin-bottom: 0.5rem;">Submit Blog Brief</h1>
+        <p style="color: #8b949e; margin-bottom: 2rem;">
+          Feed topic notes and technical ideas into the daily blogging pipeline.
+        </p>
+      </div>
+
+      <form id="submission-form">
+        <input type="hidden" id="form-type" value="research" />
+
+        <label for="topic">Topic / Research Title</label>
+        <input type="text" id="topic" name="topic" required placeholder="e.g. Medical TOFU SEO: Brand Erasure in AI Search Overviews" />
+
+        <div id="research-fields">
+          <label for="hypothesis">
+            Hypothesis To Test 
+            <small style="color: #8b949e; font-weight: normal;">(Evaluated objectively — can be Proved or Disproved)</small>
+          </label>
+          <input type="text" id="hypothesis" name="hypothesis" placeholder="e.g. Non-branded medical queries trigger Google AI Overviews over 80% of the time, replacing brand URLs." />
+
+          <label>Target AI Search Engines &amp; Models</label>
+          <div class="engine-group">
+            <label class="engine-checkbox">
+              <input type="checkbox" name="engines" value="google_aio" checked />
+              Google AI Overview
+            </label>
+            <label class="engine-checkbox">
+              <input type="checkbox" name="engines" value="gemini" checked />
+              Gemini 3 Flash
+            </label>
+            <label class="engine-checkbox">
+              <input type="checkbox" name="engines" value="perplexity" checked />
+              Perplexity Deep Research
+            </label>
+            <label class="engine-checkbox">
+              <input type="checkbox" name="engines" value="openai" />
+              OpenAI GPT-4o
+            </label>
+            <label class="engine-checkbox">
+              <input type="checkbox" name="engines" value="claude" />
+              Claude 3.5 Sonnet
+            </label>
+          </div>
+        </div>
+
+        <label for="raw_notes">Raw Notes &amp; Observations</label>
+        <textarea id="raw_notes" name="raw_notes" rows="5" placeholder="Paste unformatted notes, search queries, observations, or reference links..."></textarea>
+
+        <button type="submit" id="submit-btn" style="margin-top: 1rem; width: 100%;">Submit Study &amp; Trigger Pipeline</button>
+      </form>
+      
+      <div id="status-message" style="margin-top: 1.5rem; padding: 1rem; border-radius: 8px; display: none;"></div>
+    </div>
   </main>
 
   <!-- Firebase SDKs -->
@@ -35,41 +156,94 @@
   <script defer src="/__/firebase/init.js"></script>
 
   <script>
+    function switchTab(type) {
+      document.getElementById('form-type').value = type;
+      const tabResearch = document.getElementById('tab-research');
+      const tabBlog = document.getElementById('tab-blog');
+      const headerResearch = document.getElementById('header-research');
+      const headerBlog = document.getElementById('header-blog');
+      const researchFields = document.getElementById('research-fields');
+      const submitBtn = document.getElementById('submit-btn');
+
+      if (type === 'research') {
+        tabResearch.classList.add('active');
+        tabBlog.classList.remove('active');
+        headerResearch.style.display = 'block';
+        headerBlog.style.display = 'none';
+        researchFields.style.display = 'block';
+        submitBtn.textContent = 'Submit Study & Trigger Pipeline';
+      } else {
+        tabBlog.classList.add('active');
+        tabResearch.classList.remove('active');
+        headerBlog.style.display = 'block';
+        headerResearch.style.display = 'none';
+        researchFields.style.display = 'none';
+        submitBtn.textContent = 'Submit Blog Brief';
+      }
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
-      const form = document.getElementById('idea-form');
+      const form = document.getElementById('submission-form');
       const statusMessage = document.getElementById('status-message');
       const submitBtn = document.getElementById('submit-btn');
 
       form.addEventListener('submit', async (e) => {
         e.preventDefault();
         
-        const topic = document.getElementById('topic').value;
-        const rawNotes = document.getElementById('raw_notes').value;
+        const formType = document.getElementById('form-type').value;
+        const topic = document.getElementById('topic').value.trim();
+        const rawNotes = document.getElementById('raw_notes').value.trim();
         
         submitBtn.setAttribute('aria-busy', 'true');
         submitBtn.disabled = true;
+        statusMessage.style.display = 'none';
 
         try {
           const db = firebase.firestore();
-          await db.collection('blog_ideas').add({
-            topic: topic,
-            raw_notes: rawNotes,
-            status: 'pending',
-            created_at: firebase.firestore.FieldValue.serverTimestamp(),
-            published_url: null
-          });
-          
-          statusMessage.style.display = 'block';
-          statusMessage.style.backgroundColor = 'var(--pico-mark-background-color)';
-          statusMessage.style.color = 'var(--pico-mark-color)';
-          statusMessage.textContent = 'Idea submitted successfully! The agent will process it on its next run.';
+
+          if (formType === 'research') {
+            const hypothesis = document.getElementById('hypothesis').value.trim();
+            const checkedEngines = Array.from(document.querySelectorAll('input[name="engines"]:checked')).map(cb => cb.value);
+
+            await db.collection('research_ideas').add({
+              topic: topic,
+              hypothesis: hypothesis || 'No specific hypothesis provided',
+              target_engines: checkedEngines.length ? checkedEngines : ['google_aio', 'gemini', 'perplexity'],
+              raw_notes: rawNotes,
+              status: 'pending',
+              created_at: firebase.firestore.FieldValue.serverTimestamp(),
+              published_url: null
+            });
+            
+            statusMessage.style.display = 'block';
+            statusMessage.style.backgroundColor = '#1f6feb22';
+            statusMessage.style.border = '1px solid #388bfd';
+            statusMessage.style.color = '#58a6ff';
+            statusMessage.innerHTML = '✅ <strong>Empirical Research Study Submitted!</strong><br/>The Database-First agent will run 30 queries, record raw responses to Firestore, fetch Perplexity Deep Research, and generate the report.';
+          } else {
+            await db.collection('blog_ideas').add({
+              topic: topic,
+              raw_notes: rawNotes,
+              status: 'pending',
+              created_at: firebase.firestore.FieldValue.serverTimestamp(),
+              published_url: null
+            });
+            
+            statusMessage.style.display = 'block';
+            statusMessage.style.backgroundColor = '#23863622';
+            statusMessage.style.border = '1px solid #2ea043';
+            statusMessage.style.color = '#3fb950';
+            statusMessage.innerHTML = '✅ <strong>Blog Brief Submitted!</strong><br/>The blogging agent will process your notes on its next run.';
+          }
+
           form.reset();
         } catch (error) {
           console.error("Error writing document: ", error);
           statusMessage.style.display = 'block';
-          statusMessage.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
-          statusMessage.style.color = 'white';
-          statusMessage.textContent = 'Error: ' + error.message;
+          statusMessage.style.backgroundColor = '#da363322';
+          statusMessage.style.border = '1px solid #f85149';
+          statusMessage.style.color = '#ff7b72';
+          statusMessage.textContent = 'Error submitting to Firebase: ' + error.message;
         } finally {
           submitBtn.removeAttribute('aria-busy');
           submitBtn.disabled = false;
