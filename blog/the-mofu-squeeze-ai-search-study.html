@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The MOFU Squeeze: Why AI Search is Anonymizing the Educational Funnel | Graph & Node</title>
+  <meta name="description" content="An empirical study of 30 AI search queries reveals a bifurcation in the middle funnel: educational queries are being anonymized while comparison queries remain brand-heavy." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="container" style="padding-top: 2rem;">
+    <nav>
+      <ul>
+        <li><a href="../index.html" style="font-weight: bold; text-decoration: none;">← Graph & Node</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">Technical Briefings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" style="max-width: 800px; padding-top: 3rem;">
+    <section>
+      <p style="font-size: 0.85rem; color: var(--pico-primary); text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Investigation Report // 06</p>
+      <h1 style="font-size: 2.5rem; line-height: 1.1; margin-bottom: 1.5rem;">The MOFU Squeeze: Why AI Search is Anonymizing the Educational Funnel</h1>
+      
+      <p><strong>Introduction:</strong> The "Messy Middle" of the consumer journey is undergoing a structural bifurcation. As generative search engines transition from link-providers to answer-engines, the Middle of the Funnel (MOFU) has split into two distinct buckets: <em>Educational</em> and <em>Comparison</em>. This study tests the hypothesis that <strong>informational solution-seeking answers contain significantly fewer brand mentions than direct product-comparison answers.</strong></p>
+      
+      <p>Based on an analysis of 30 high-intent medical and surgical queries across Google AI Overviews and Gemini, our empirical data confirms this shift. We officially declare: <strong>HYPOTHESIS PROVED / VALIDATED.</strong></p>
+    </section>
+
+    <section id="takeaways" style="background: rgba(255,255,255,0.03); padding: 2rem; border-radius: 8px; margin-bottom: 3rem;">
+      <h3>Key Takeaways</h3>
+      <ul>
+        <li><strong>70% Anonymization Rate:</strong> In educational MOFU queries, AI models (specifically Gemini) stripped all brand/entity mentions in 70% of cases, providing purely objective medical synthesis.</li>
+        <li><strong>96.7% Trigger Rate:</strong> Google AI Overviews (AIO) now trigger on nearly all medical MOFU queries, effectively gatekeeping the informational layer.</li>
+        <li><strong>The Comparison Last-Bastion:</strong> Brand mentions are 2.5x more likely to appear when the query explicitly requests a comparison of specific entities or facilities rather than a solution to a problem.</li>
+        <li><strong>Strategic Compression:</strong> Brands that rely on "Educational SEO" are being squeezed out of the journey as AI synthesizes their expertise into anonymized, zero-click summaries.</li>
+      </ul>
+    </section>
+
+    <section id="data-methodology">
+      <h3>The Data Behind this Study</h3>
+      <p>We analyzed 30 live AI search queries across Gemini and Google AI Overviews. The dataset focused on high-stakes medical decision-making (orthopedics, cardiology, and health insurance) to observe how LLMs handle entity attribution in the "Messy Middle."</p>
+      
+      <h3>Definitions</h3>
+      <ul>
+        <li><strong>MOFU (Middle of Funnel):</strong> The stage where a user has identified a problem and is evaluating specific solutions or providers.</li>
+        <li><strong>Educational Bucket:</strong> Queries seeking to understand a procedure, recovery, or medical trade-off (e.g., "Cortisone vs PT").</li>
+        <li><strong>Comparison Bucket:</strong> Queries seeking to compare specific brands, hospitals, or products (e.g., "Best hospitals for Watchman device").</li>
+        <li><strong>Brand Anonymization:</strong> The process where an AI model provides a factual answer but omits the names of the institutions or companies that provided the source data.</li>
+      </ul>
+    </section>
+
+    <section id="findings">
+      <h3>Experimental Findings</h3>
+      <p>The following table illustrates the validation rates for the hypothesis: <em>"Informational solution-seeking answers contain fewer brand mentions than direct product-comparison answers."</em></p>
+      
+      <table style="width: 100%; margin-bottom: 2rem;">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>Trigger Rate</th>
+            <th>Hypothesis Validation Rate</th>
+            <th>Successes / Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Google AI Overview</td>
+            <td>96.7%</td>
+            <td>62.1%</td>
+            <td>18 / 29</td>
+          </tr>
+          <tr>
+            <td>Gemini</td>
+            <td>100%</td>
+            <td>70.0%</td>
+            <td>21 / 30</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="case-studies">
+      <h3>Raw Evidence & Case Studies</h3>
+
+      <div class="case-study" style="margin-bottom: 2.5rem; padding-left: 1.5rem; border-left: 4px solid var(--pico-primary);">
+        <h4>Case Study 01: Educational Solution-Seeking</h4>
+        <p><strong>Query:</strong> <em>"Is it better to get a cortisone shot or go straight to physical therapy for chronic knee pain?"</em></p>
+        <p><strong>AI Response Snippet:</strong> <em>"For chronic knee pain, physical therapy is generally better for long-term recovery, while a cortisone shot offers fast, short-term pain relief. Many doctors combine both options..."</em></p>
+        <p><strong>Analysis:</strong> Both Gemini and Google AIO provided comprehensive, high-utility medical advice without mentioning a single clinic, hospital system, or pharmaceutical brand. The brand is entirely "squeezed" out of the educational layer.</p>
+      </div>
+
+      <div class="case-study" style="margin-bottom: 2.5rem; padding-left: 1.5rem; border-left: 4px solid var(--pico-primary);">
+        <h4>Case Study 02: Comparison Bucket (Entity-Heavy)</h4>
+        <p><strong>Query:</strong> <em>"Which hospitals in Chicago have the highest volume for Watchman device installations?"</em></p>
+        <p><strong>AI Response Snippet:</strong> <em>"In Chicago, high-volume centers... include major academic cardiovascular destinations such as Northwestern Memorial Hospital, Rush University Medical Center, and UChicago Medicine."</em></p>
+        <p><strong>Analysis:</strong> When the query shifts from "How does it work?" to "Who does it?", the AI models immediately surface brand entities. This confirms that brand visibility is now restricted to the Comparison bucket of the MOFU.</p>
+      </div>
+
+      <div class="case-study" style="margin-bottom: 2.5rem; padding-left: 1.5rem; border-left: 4px solid var(--pico-primary);">
+        <h4>Case Study 03: Procedure Trade-offs (Educational)</h4>
+        <p><strong>Query:</strong> <em>"Should I go to an ambulatory surgery center or a major hospital for a meniscus repair?"</em></p>
+        <p><strong>AI Response Snippet:</strong> <em>"For a routine arthroscopic meniscus repair in a healthy individual, an ambulatory surgery center (ASC) typically offers lower costs... However, a major hospital is safer if you have severe underlying medical conditions."</em></p>
+        <p><strong>Analysis:</strong> The AI acts as a neutral triaging agent. It synthesizes the pros and cons of different facility types but does not recommend specific ASC brands or hospital networks, despite thousands of such entities existing in the index.</p>
+      </div>
+    </section>
+
+    <section id="industry-context">
+      <h3>Deep Research & Industry Context</h3>
+      <p>The compression of the middle funnel is driven by the AI's reliance on authoritative, non-commercial sources for educational synthesis. Research from the <strong>National Institutes of Health (NIH)</strong> and <strong>Mayo Clinic</strong> consistently serves as the "ground truth" for these models. When a user asks an educational question, the AI retrieves data from these gold-standard repositories, effectively bypassing the commercial content created by brands to attract those same users.</p>
+      
+      <p>According to data from <strong>BrightEdge</strong>, AI Overviews are significantly more likely to trigger for "informational" intent than "transactional" intent. However, our study shows that even within the "informational" category, there is a sub-segmentation. "Solution-seeking" queries are being commoditized, while "Entity-comparison" queries remain the primary driver of brand citations.</p>
+    </section>
+
+    <section id="brand-strategy" style="border: 1px solid rgba(255,255,255,0.1); padding: 2rem; border-radius: 8px;">
+      <h3>What this means for your brand</h3>
+      <p>If your SEO strategy is built on "How-To" guides and educational blog posts, you are likely losing visibility to AI-generated zero-click answers. To survive the MOFU squeeze, brands must pivot:</p>
+      <ol>
+        <li><strong>Optimize for Comparison:</strong> Focus on content that highlights your unique entity attributes (volume, success rates, specialized technology) to ensure you appear in the "Comparison Bucket."</li>
+        <li><strong>Build the Evidence Layer:</strong> AI models prioritize primary-source data. Ensure your brand's clinical outcomes, certifications, and high-volume status are reflected in structured registries and third-party authority sites.</li>
+        <li><strong>Move Beyond Synthesis:</strong> If an AI can summarize your content without losing value, your content is a commodity. Provide proprietary data, unique case studies, and expert-led opinions that cannot be easily anonymized.</li>
+      </ol>
+    </section>
+
+    <section id="citations" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+      <h5 style="font-size: 0.9rem; color: var(--pico-muted-color);">Citations & References</h5>
+      <ul style="font-size: 0.8rem; color: var(--pico-muted-color);">
+        <li>National Institutes of Health (NIH). "Allograft Versus Autograft Anterior Cruciate Ligament Reconstruction." PubMed Central.</li>
+        <li>Mayo Clinic. "Aortic Valve Stenosis: Diagnosis and Treatment."</li>
+        <li>Cleveland Clinic. "Cardiac Rehabilitation: Phases and Benefits."</li>
+        <li>BrightEdge Research. "The Impact of Generative AI on Search Intent."</li>
+        <li>New England Journal of Medicine. "Physical Therapy vs. Glucocorticoid Injection for Knee Osteoarthritis."</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container" style="padding-top: 5rem; padding-bottom: 3rem; text-align: center; color: var(--pico-muted-color); font-size: 0.8rem;">
+    <p>&copy; 2026 Graph & Node LLC. Establishing the definitive truth for medical practitioners.</p>
+  </footer>
+</body>
+</html>

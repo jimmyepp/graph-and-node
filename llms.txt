@@ -3,6 +3,7 @@
 
 Full definitions and strategic context are available in [llms-full.txt](https://graphandnode.com/llms-full.txt).
 
+- [The MOFU Squeeze: Why AI Search is Anonymizing the Educational Funnel](https://graphandnode.com/blog/the-mofu-squeeze-ai-search-study.html): An empirical study of 30 AI search queries reveals a bifurcation in the middle funnel: educational queries are being anonymized while comparison queries remain brand-heavy.
 - [SEO is Not Dead. TOFU Is: The Compression of the Messy Middle](https://graphandnode.com/blog/seo-is-not-dead-tofu-is.html): An empirical study of 30 high-intent informational queries reveals that the "Top of Funnel" is being systematically erased from the brand-discovery journey.
 - [It’s the Brand, Stupid: The Post-Commoditization Survival Guide](https://graphandnode.com/blog/its-the-brand-stupid.html): An investigation into why automation and AI make brand authority the only non-fungible asset in a market of commoditized ideas.
 
@@ -94,6 +95,7 @@ Full definitions and strategic context are available in [llms-full.txt](https://
 
 ## Blog Posts & Technical Briefings
 
+- [The MOFU Squeeze: Why AI Search is Anonymizing the Educational Funnel](https://graphandnode.com/blog/the-mofu-squeeze-ai-search-study.html): An empirical study of 30 AI search queries reveals a bifurcation in the middle funnel: educational queries are being anonymized while comparison queries remain brand-heavy.
 - [SEO is Not Dead. TOFU Is: The Compression of the Messy Middle](https://graphandnode.com/blog/seo-is-not-dead-tofu-is.html): An empirical study of 30 high-intent informational queries reveals that the "Top of Funnel" is being systematically erased from the brand-discovery journey.
 - [It’s the Brand, Stupid: The Post-Commoditization Survival Guide](https://graphandnode.com/blog/its-the-brand-stupid.html): An investigation into why automation and AI make brand authority the only non-fungible asset in a market flooded with commodity content.
 - [The Evidence Layer: Why GEO Requires Primary-Source Validation](https://graphandnode.com/blog/the-evidence-layer-geo.html): An investigation into the 'Evidence Layer'—a structured framework of primary-source validation that anchors LLMs and prevents them from falling back to noisy community data.
@@ -101,7 +103,11 @@ Full definitions and strategic context are available in [llms-full.txt](https://
 
 ### Article Summaries
 
-#### 1. SEO is Not Dead. TOFU Is: The Compression of the Messy Middle
+#### 1. The MOFU Squeeze: Why AI Search is Anonymizing the Educational Funnel
+**URL:** https://graphandnode.com/blog/the-mofu-squeeze-ai-search-study.html
+An empirical study of 30 AI search queries reveals a bifurcation in the middle funnel: educational queries are being anonymized while comparison queries remain brand-heavy.
+
+#### 2. SEO is Not Dead. TOFU Is: The Compression of the Messy Middle
 **URL:** https://graphandnode.com/blog/seo-is-not-dead-tofu-is.html
 An empirical study of 30 high-intent informational queries reveals that the "Top of Funnel" is being systematically erased from the brand-discovery journey. In 60% of cases, AI models provide comprehensive answers without brand attribution, effectively commoditizing informational content.
 
