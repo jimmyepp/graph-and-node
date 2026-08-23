@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SEO Ain’t Dead. But TOFU is Close | Graph & Node Investigation</title>
+  <meta name="description" content="Empirical study on brand visibility in top-of-funnel AI search queries across Google AIO and Gemini." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="container" style="padding-top: 2rem;">
+    <nav>
+      <ul>
+        <li><a href="index.html" style="font-weight: bold; text-decoration: none;">← Technical Briefings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" style="max-width: 800px; padding-top: 2rem;">
+    <article>
+      <header>
+        <p style="font-size: 0.85rem; color: var(--pico-primary); text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Investigation Report // 05</p>
+        <h1 style="font-size: 2.5rem; line-height: 1.1; margin-bottom: 1rem;">SEO Ain’t Dead. But TOFU is Close.</h1>
+        <p style="font-size: 1.25rem; color: var(--pico-muted-color);">An empirical analysis of brand erasure in top-of-funnel AI search summaries.</p>
+      </header>
+
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          For decades, Top-of-Funnel (TOFU) SEO was the engine of brand awareness. By answering broad, informational queries, brands earned the "first touch" in the consumer journey. However, the rise of Generative AI search—specifically Google AI Overviews (AIO) and Gemini—threatens to sever this link. 
+        </p>
+        <p>
+          This study tests the hypothesis: <strong>"Top of funnel queries do not mention brands. Brands cannot be known for top of funnel queries anymore."</strong>
+        </p>
+        <p>
+          <strong>Conclusion: HYPOTHESIS PARTIALLY VALIDATED.</strong> Our data shows that in 50% to 56.7% of cases, AI models synthesize answers without mentioning a single brand or source in the primary response block. While authoritative "mega-brands" (e.g., CDC, Mayo Clinic) still secure citations, the mid-market brand is effectively invisible in the new TOFU landscape.
+        </p>
+      </section>
+
+      <section>
+        <h2>Key Takeaways</h2>
+        <ul>
+          <li><strong>56.7% Brand Erasure:</strong> In Google AI Overviews, more than half of informational queries were answered without an explicit brand mention in the summary text.</li>
+          <li><strong>100% Trigger Rate:</strong> 30 out of 30 TOFU queries triggered an AI Overview, confirming that informational search is now a "zero-click" environment by default.</li>
+          <li><strong>The Authority Monopoly:</strong> When brands <em>are</em> mentioned, they are almost exclusively high-authority institutions (MedlinePlus, Cleveland Clinic), leaving no room for challenger brands.</li>
+          <li><strong>Gemini vs. AIO:</strong> Gemini was slightly more "brand-agnostic," validating the erasure hypothesis in 50% of cases, while Google AIO leaned harder into brand-less synthesis at 56.7%.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>The Data Behind this Study</h2>
+        <p>
+          We analyzed 30 live AI search queries across Google AI Overviews and Gemini, focusing on high-volume medical and health-related informational intents. These queries represent the classic "Top of Funnel" where users seek definitions, causes, and symptoms.
+        </p>
+        <h3>Definitions</h3>
+        <ul>
+          <li><strong>TOFU (Top of Funnel):</strong> Queries where the user is seeking information or education, not a specific product or brand.</li>
+          <li><strong>Brand Erasure:</strong> The phenomenon where an AI model provides a complete answer but omits the name of the source or brand that provided the underlying data.</li>
+          <li><strong>AIO (AI Overview):</strong> Google's generative search feature that appears at the top of the SERP.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Experimental Findings</h2>
+        <p>The following table illustrates the performance of Google AIO and Gemini across the 30-query dataset (Study ID: Y4PUJdmnACdFkaBvo4Ao).</p>
+        
+        <table class="striped">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>AIO Triggered</th>
+              <th>Hypothesis Validated (No Brand)</th>
+              <th>Validation Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Google AI Overviews</td>
+              <td>30/30</td>
+              <td>17/30</td>
+              <td>56.7%</td>
+            </tr>
+            <tr>
+              <td>Gemini</td>
+              <td>N/A</td>
+              <td>15/30</td>
+              <td>50.0%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Raw Evidence: The "Invisible" Brand</h3>
+        <p>Consider the query: <em>"stages of chronic kidney disease"</em></p>
+        <blockquote>
+          <strong>Google AIO Response:</strong> "Chronic kidney disease (CKD) has five main stages. Doctors measure the stages using an estimated glomerular filtration rate (eGFR) test... Stage 1: eGFR is 90 or higher..."
+        </blockquote>
+        <p>
+          In this instance, Google AIO provides the full medical breakdown but <strong>mentions no brand</strong> in the text. The user gets 100% of the value without ever knowing which institution provided the data. This is the death of TOFU awareness.
+        </p>
+
+        <h3>The "Authority" Exception</h3>
+        <p>Conversely, for the query <em>"what causes high triglycerides"</em>, Google AIO cited a source:</p>
+        <blockquote>
+          <strong>Google AIO Snippet:</strong> "...You can learn more via the MedlinePlus Guide on Triglycerides."
+        </blockquote>
+        <p>
+          This demonstrates that while the hypothesis is true for the majority, <strong>Mega-Brands</strong> with extreme trust scores can still break through the AI synthesis layer.
+        </p>
+      </section>
+
+      <section>
+        <h2>Deep Research & Industry Context</h2>
+        <p>
+          According to research synthesized via Perplexity, the "Messy Middle" of the consumer journey is being compressed. Users are less likely to click on links when an AI summary appears (Pew Research, 2025). Furthermore, Ahrefs data suggests that while brand mentions are becoming the "new backlinks," the threshold for being mentioned in an AIO is significantly higher than traditional ranking.
+        </p>
+        <p>
+          Citations from <em>Seer Interactive</em> and <em>BrightEdge</em> confirm that AIOs are hurting organic CTR for informational queries by as much as 20-60%, depending on the vertical.
+        </p>
+      </section>
+
+      <section>
+        <h2>What this means for your brand</h2>
+        <p>
+          If your SEO strategy relies on "How-To" guides and "What is" articles to drive awareness, you are facing a 56% probability of total brand erasure.
+        </p>
+        <ol>
+          <li><strong>Pivot to Middle-Funnel:</strong> Focus on queries that require <em>comparison</em> or <em>opinion</em>, where AI models are more likely to cite multiple sources.</li>
+          <li><strong>Become a "Primary Source":</strong> AI models favor "Hidden Gems" and primary research. Stop rewriting existing information; start publishing original datasets.</li>
+          <li><strong>Entity Reinforcement:</strong> Ensure your brand is a recognized entity in the Knowledge Graph. If the LLM doesn't "know" you as an authority on a topic, it will never cite you in a summary.</li>
+        </ol>
+      </section>
+
+      <footer>
+        <p><strong>Citations:</strong></p>
+        <ul style="font-size: 0.8rem; color: var(--pico-muted-color);">
+          <li>Seer Interactive: AIO Impact on Google CTR (2025)</li>
+          <li>Pew Research: AI Summaries and Search Click Behavior (2025)</li>
+          <li>Ahrefs: AI Overview Brand Visibility Study (2026)</li>
+          <li>Think with Google: Navigating Purchase Behavior in the AI Era</li>
+        </ul>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="container" style="padding-top: 3rem; padding-bottom: 3rem; text-align: center; color: var(--pico-muted-color); font-size: 0.8rem;">
+    <p>&copy; 2026 Graph & Node LLC. Empirical Truth for the Generative Age.</p>
+  </footer>
+</body>
+</html>
