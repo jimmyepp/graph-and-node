@@ -3,6 +3,7 @@
 
 Full definitions and strategic context are available in [llms-full.txt](https://graphandnode.com/llms-full.txt).
 
+- [MOFU Is Also Effected by AI Search: The Selective Collapse of the Messy Middle](https://graphandnode.com/blog/mofu-ai-search-impact.html): An empirical study of 30 complex healthcare queries reveals how AI search engines are selectively collapsing the Middle of the Funnel (MOFU).
 - [SEO is Not Dead. TOFU Is: The Compression of the Messy Middle](https://graphandnode.com/blog/seo-is-not-dead-tofu-is.html): An empirical study of 30 high-intent informational queries reveals that the "Top of Funnel" is being systematically erased from the brand-discovery journey.
 - [It’s the Brand, Stupid: The Post-Commoditization Survival Guide](https://graphandnode.com/blog/its-the-brand-stupid.html): An investigation into why automation and AI make brand authority the only non-fungible asset in a market of commoditized ideas.
 
@@ -94,25 +95,30 @@ Full definitions and strategic context are available in [llms-full.txt](https://
 
 ## Blog Posts & Technical Briefings
 
+- [MOFU Is Also Effected by AI Search: The Selective Collapse of the Messy Middle](https://graphandnode.com/blog/mofu-ai-search-impact.html): An empirical study of 30 complex healthcare queries reveals how AI search engines are selectively collapsing the Middle of the Funnel (MOFU).
 - [SEO is Not Dead. TOFU Is: The Compression of the Messy Middle](https://graphandnode.com/blog/seo-is-not-dead-tofu-is.html): An empirical study of 30 high-intent informational queries reveals that the "Top of Funnel" is being systematically erased from the brand-discovery journey.
-- [It’s the Brand, Stupid: The Post-Commoditization Survival Guide](https://graphandnode.com/blog/its-the-brand-stupid.html): An investigation into why automation and AI make brand authority the only non-fungible asset in a market of commoditized ideas.
+- [It’s the Brand, Stupid: The Post-Commoditization Survival Guide](https://graphandnode.com/blog/its-the-brand-stupid.html): An investigation into why automation and AI make brand authority the only non-fungible asset in a market flooded with commodity content.
 - [The Evidence Layer: Why GEO Requires Primary-Source Validation](https://graphandnode.com/blog/the-evidence-layer-geo.html): An investigation into the 'Evidence Layer'—a structured framework of primary-source validation that anchors LLMs and prevents them from falling back to noisy community data.
 - [How AI Search Engines Resolve Physician Entities](https://graphandnode.com/blog/how-ai-search-resolves-physician-entities.html): A deep dive into Retrieval-Augmented Generation (RAG) and why conflicting NPI registry data and address drift silently remove surgeons and specialists from AI search recommendations.
 
 ### Article Summaries
 
-#### 1. SEO is Not Dead. TOFU Is: The Compression of the Messy Middle
+#### 1. MOFU Is Also Effected by AI Search: The Selective Collapse of the Messy Middle
+**URL:** https://graphandnode.com/blog/mofu-ai-search-impact.html
+An empirical study of 30 complex healthcare queries reveals how AI search engines are selectively collapsing the Middle of the Funnel (MOFU). While 96.7% of queries trigger an AI Overview, journey-ending synthesis is highly selective, occurring in only 34.5% of cases.
+
+#### 2. SEO is Not Dead. TOFU Is: The Compression of the Messy Middle
 **URL:** https://graphandnode.com/blog/seo-is-not-dead-tofu-is.html
 An empirical study of 30 high-intent informational queries reveals that the "Top of Funnel" is being systematically erased from the brand-discovery journey. In 60% of cases, AI models provide comprehensive answers without brand attribution, effectively commoditizing informational content.
 
-#### 2. It's the Brand, Stupid: The Post-Commoditization Survival Guide
+#### 3. It's the Brand, Stupid: The Post-Commoditization Survival Guide
 **URL:** https://graphandnode.com/blog/its-the-brand-stupid.html
 An investigation into why automation and generative AI make brand authority the only non-fungible asset in a market flooded with commodity content. When AI can generate infinite synthetic content in seconds, raw content volume loses all value. The only remaining signal LLMs and users trust is verified entity authority and primary source evidence.
 
-#### 3. The Evidence Layer: Why GEO Requires Primary-Source Validation
+#### 4. The Evidence Layer: Why GEO Requires Primary-Source Validation
 **URL:** https://graphandnode.com/blog/the-evidence-layer-geo.html
 Moving beyond social proof to anchor AI search in objective truth. AI search engines seek primary-source validation (accreditations, certifications, regulatory filings, clinical datasets) before trusting an entity. Without a structured Evidence Layer, LLMs fall back to noisy discussion forums or omit the entity entirely.
 
-#### 4. How AI Search Engines Resolve Physician Entities
+#### 5. How AI Search Engines Resolve Physician Entities
 **URL:** https://graphandnode.com/blog/how-ai-search-resolves-physician-entities.html
 A deep dive into Retrieval-Augmented Generation (RAG) and Entity Resolution. Conflicting NPI registry data, outdated billing addresses, and unlinked sub-specialty profiles create data contradictions for LLMs, causing them to omit physicians from AI search recommendations in favor of competitors with verified entity consensus.

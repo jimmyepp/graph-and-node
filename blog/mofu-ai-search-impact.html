@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>Investigation: MOFU Is Also Effected by AI Search | Graph &amp; Node</title>
+  <meta name="description" content="An empirical study of 30 complex healthcare queries reveals how AI search engines are selectively collapsing the Middle of the Funnel (MOFU)." />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <header class="container" style="padding-top: 2rem;">
+    <nav>
+      <ul>
+        <li><a href="index.html" style="font-weight: bold; text-decoration: none;">← Technical Briefings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" style="max-width: 800px; padding-top: 3rem;">
+    <section>
+      <p style="font-size: 0.85rem; color: var(--pico-primary); text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Investigation Report // 06</p>
+      <h1 style="font-size: 2.5rem; line-height: 1.1; margin-bottom: 1.5rem;">MOFU Is Also Effected by AI Search: The Selective Collapse of the Messy Middle</h1>
+      
+      <p style="font-size: 1.25rem; color: var(--pico-muted-color); margin-bottom: 2rem;">
+        As AI Overviews (AIOs) become ubiquitous, the industry has focused on the erasure of Top-of-Funnel (TOFU) awareness queries. However, new empirical data suggests that the Middle-of-Funnel (MOFU)—the critical "consideration" phase—is also being selectively compressed.
+      </p>
+
+      <div style="background: rgba(255, 255, 255, 0.05); padding: 1.5rem; border-left: 4px solid var(--pico-primary); margin-bottom: 2rem;">
+        <strong>CORE HYPOTHESIS:</strong> "MOFU is affected just like TOFU… but ONLY on certain questions patients ask."<br>
+        <strong>STATUS:</strong> <span style="color: #4CAF50; font-weight: bold;">HYPOTHESIS VALIDATED</span>
+      </div>
+
+      <p>
+        Our investigation into 30 high-intent healthcare comparison and consideration queries confirms that while AI search engines trigger overviews for nearly 97% of Middle-of-Funnel (MOFU) searches, the "TOFU-style" collapse—where the AI provides a definitive, journey-ending answer—is highly selective. The data indicates that for approximately 34.5% of these queries, the AI successfully synthesizes a comparison that potentially eliminates the need for further site navigation.
+      </p>
+
+      <h3>Key Takeaways</h3>
+      <ul>
+        <li><strong>96.7% Trigger Rate:</strong> Google AI Overviews (AIOs) appeared for nearly every MOFU query tested, indicating that the "Messy Middle" is now almost entirely mediated by generative synthesis.</li>
+        <li><strong>Selective Journey Termination:</strong> Only 34.5% of AIO responses provided a definitive "TOFU-style" answer that could satisfy the user's intent without a click-through.</li>
+        <li><strong>Model Disparity:</strong> Gemini showed a significantly lower impact on the MOFU journey, with only a 10% validation rate for journey-ending synthesis compared to Google AIO.</li>
+        <li><strong>Brand Vulnerability:</strong> Queries involving "newest" treatments or direct "vs" comparisons are the most susceptible to AI-driven funnel compression.</li>
+      </ul>
+
+      <hr style="margin: 3rem 0;" />
+
+      <h3>The Data Behind this Study</h3>
+      <p>
+        We analyzed 30 live AI search queries across Google AI Overviews and Gemini, focusing specifically on Middle-of-Funnel (MOFU) intents. These queries represent the "Consideration" phase of the patient journey, where users are comparing treatments, evaluating side effects, or seeking specific clinical stages.
+      </p>
+
+      <h3>Definitions</h3>
+      <ul>
+        <li><strong>TOFU (Top of Funnel):</strong> Broad, awareness-level queries (e.g., "What is psoriasis?").</li>
+        <li><strong>MOFU (Middle of Funnel):</strong> Comparison and consideration queries (e.g., "Biologics vs. Topicals for psoriasis").</li>
+        <li><strong>AIO (AI Overview):</strong> The generative summary provided at the top of Google Search results.</li>
+        <li><strong>GEO (Generative Engine Optimization):</strong> The practice of optimizing content to be retrieved and cited by generative search models.</li>
+      </ul>
+
+      <h3>Experimental Setup / Methodology</h3>
+      <p>
+        The study utilized a controlled dataset of 30 healthcare-specific queries. Each query was executed through Google Search (to trigger AIOs) and Gemini. Responses were recorded in a Firestore database (Study ID: GPBPGajdNDB43tx1rfHE) and evaluated for their ability to provide a definitive answer that would logically terminate a user's search journey (Hypothesis Validation).
+      </p>
+
+      <h3>Findings</h3>
+      <p>
+        The following table illustrates the performance and impact of the two primary models tested against the 30-query MOFU dataset.
+      </p>
+
+      <table style="width: 100%; border-collapse: collapse; margin-bottom: 2rem;">
+        <thead>
+          <tr style="border-bottom: 2px solid var(--pico-primary);">
+            <th style="text-align: left; padding: 0.75rem;">Metric</th>
+            <th style="text-align: center; padding: 0.75rem;">Google AIO</th>
+            <th style="text-align: center; padding: 0.75rem;">Gemini</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 0.75rem;">Trigger Rate</td>
+            <td style="text-align: center; padding: 0.75rem;">96.7% (29/30)</td>
+            <td style="text-align: center; padding: 0.75rem;">100% (30/30)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 0.75rem;">Hypothesis Validated (Journey Collapse)</td>
+            <td style="text-align: center; padding: 0.75rem;">34.5% (10/29)</td>
+            <td style="text-align: center; padding: 0.75rem;">10.0% (3/30)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 0.75rem;">Success Rate (Technical)</td>
+            <td style="text-align: center; padding: 0.75rem;">34.5%</td>
+            <td style="text-align: center; padding: 0.75rem;">10.0%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr style="margin: 3rem 0;" />
+
+      <h3>Raw Evidence & Case Studies</h3>
+
+      <div style="margin-bottom: 3rem;">
+        <h4>Case Study 1: The "Newest Treatment" Query</h4>
+        <p><strong>Query:</strong> "What are the newest FDA-approved biologics for plaque psoriasis?"</p>
+        <blockquote style="font-style: italic; border-left: 4px solid #4CAF50;">
+          "The newest FDA approval for moderate-to-severe plaque psoriasis is ICOTYDE (icotrokinra), approved in March 2026 as the first targeted oral peptide blocking the IL-23 receptor..."
+        </blockquote>
+        <p>
+          <strong>Analysis:</strong> This query represents a successful "TOFU-style" collapse in the MOFU. The AI Overview provided a definitive, time-sensitive fact (the 2026 approval) that directly answers the user's research intent. For a pharmaceutical brand, this means the AI has become the primary source of truth, bypassing the need for the user to visit a clinical news site or brand portal.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 3rem;">
+        <h4>Case Study 2: The Direct Comparison Query</h4>
+        <p><strong>Query:</strong> "Which is more effective for chronic back pain: physical therapy or chiropractic adjustments?"</p>
+        <blockquote style="font-style: italic; border-left: 4px solid #4CAF50;">
+          "Neither treatment is universally 'more effective', as both physical therapy and chiropractic adjustments are proven to help chronic back pain through different methods..."
+        </blockquote>
+        <p>
+          <strong>Analysis:</strong> The AI successfully synthesized a balanced comparison, highlighting the strengths of each modality. By providing a "Which should you choose?" section directly in the SERP, the AI Overview effectively satisfies the "Consideration" phase, potentially reducing clicks to the cited sources (Neurosurgeons of NJ, Verywell Health).
+        </p>
+      </div>
+
+      <div style="margin-bottom: 3rem;">
+        <h4>Case Study 3: The Complex Restorative Query (Hypothesis Not Validated)</h4>
+        <p><strong>Query:</strong> "Pros and cons of dental implants versus bridges for multiple missing teeth."</p>
+        <blockquote style="font-style: italic; border-left: 4px solid #f44336;">
+          "Dental implants act as artificial roots fused into the jawbone, whereas dental bridges span the gap of missing teeth by anchoring to neighboring teeth. Implants offer superior longevity..."
+        </blockquote>
+        <p>
+          <strong>Analysis:</strong> While the AI provided a high-quality summary, it did not "collapse" the funnel. The response included multiple links to in-depth guides (Healthline, CareCredit) and concluded with a prompt for more specific user information. This indicates that for high-stakes, multi-variable medical decisions, the "Messy Middle" remains intact, and users are still encouraged to seek primary source details.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 3rem;">
+        <h4>Case Study 4: The Side Effect Comparison</h4>
+        <p><strong>Query:</strong> "How do the side effects of Ozempic compare to Wegovy for weight loss?"</p>
+        <blockquote style="font-style: italic; border-left: 4px solid #f44336;">
+          "Both Ozempic and Wegovy contain the exact same active ingredient (semaglutide) and share the same core side effects. However, Wegovy is prescribed at a higher maximum dose..."
+        </blockquote>
+        <p>
+          <strong>Analysis:</strong> Despite the AI's ability to explain the dosage difference, the complexity of side effect management (titration schedules, rare risks) led the AI to provide a list of external references (Drugs.com, Cleveland Clinic). The funnel is mediated but not erased; the user is still likely to click through to verify clinical data.
+        </p>
+      </div>
+
+      <hr style="margin: 3rem 0;" />
+
+      <h3>Deep Research & Industry Context</h3>
+      <p>
+        The compression of the consumer journey is a documented phenomenon. Research from <strong>Pew Research Center</strong> indicates that as of 2025, a growing segment of the U.S. public is turning to AI as their first point of health discovery. This shift is particularly pronounced in the "Middle of the Funnel," where users move from broad symptoms to specific treatment comparisons.
+      </p>
+      <p>
+        Industry data from <strong>BrightEdge</strong> suggests that healthcare AI Overviews are evolving to prioritize "Listicle Aggregation Primacy" (LAP). Models are increasingly biased toward structured comparisons and rankings, which allow them to extract and present features directly in the interface. This aligns with our findings that 96.7% of MOFU queries trigger an overview, even if they don't always terminate the journey.
+      </p>
+      <p>
+        Furthermore, <strong>Ahrefs</strong> and other search analytics platforms have noted a "Zero-Click CTR Degradation" (ZCCD) in the medical space. When an AI Overview satisfies the searcher's intent above the fold—as seen in our Psoriasis and Back Pain case studies—the referral traffic to even the top-ranked organic results can drop by over 50%.
+      </p>
+
+      <h3>What this means for your brand</h3>
+      <p>
+        The "Messy Middle" is not disappearing, but it is being filtered. For SEO and GEO operators, the strategy must shift:
+      </p>
+      <ul>
+        <li><strong>Optimize for Comparison:</strong> Ensure your content is structured for "Listicle Aggregation." Use clear headers, comparison tables, and explicit "Pros vs. Cons" to increase the probability of being the primary source for an AIO synthesis.</li>
+        <li><strong>Own the "Newest" Facts:</strong> AI models prioritize recency. Being the first to publish and structure data around new FDA approvals or clinical breakthroughs is the only way to capture the "TOFU-style" collapse queries.</li>
+        <li><strong>Focus on High-Stakes Complexity:</strong> The data shows that complex, multi-variable decisions (like dental restorations or surgical choices) are harder for AI to collapse. Brands should double down on deep, authoritative content in these areas where the user still feels the need to "click to verify."</li>
+        <li><strong>Entity Authority is Non-Negotiable:</strong> As AI Overviews cite fewer sources, being the "Canonical Entity" for a specific treatment or condition is the only way to ensure your brand remains in the synthesis loop.</li>
+      </ul>
+
+      <hr style="margin: 3rem 0;" />
+
+      <section id="citations">
+        <h4>Primary Sources & Citations</h4>
+        <ul style="font-size: 0.85rem; color: var(--pico-muted-color);">
+          <li>Pew Research Center (2025). "How the U.S. Public and AI Experts View Artificial Intelligence."</li>
+          <li>BrightEdge (2026). "Healthcare AI Evolution: Google 2023-2025."</li>
+          <li>National Institutes of Health (NIH). "Patient Preferences for Health Information Technologies."</li>
+          <li>Mayo Clinic. "Proton Therapy for Prostate Cancer: Clinical Review."</li>
+          <li>CareCredit Well U. "Healthcare Path to Purchase Consumer Research."</li>
+          <li>Yext Research (2025). "AI Citations: User Locations and Query Context."</li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <footer class="container" style="padding-top: 5rem; padding-bottom: 3rem; text-align: center; color: var(--pico-muted-color); font-size: 0.8rem;">
+    <p>&copy; 2026 Graph &amp; Node LLC. Establishing the definitive truth for medical practitioners.</p>
+  </footer>
+
+</body>
+</html>
