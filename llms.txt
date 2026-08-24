@@ -3,6 +3,7 @@
 
 Full definitions and strategic context are available in [llms-full.txt](https://graphandnode.com/llms-full.txt).
 
+- [The Localization Gap: Why AI Search Favors National Health Brands for BOFU Queries](https://graphandnode.com/blog/bofu-healthcare-localization-gap.html): An empirical study of 30 bottom-of-funnel healthcare queries reveals a significant national bias in AI search overviews, even when search origins are localized to Phoenix, AZ.
 - [The Healthcare TOFU is Dead: Why Local Entity Trust Now Trumps National Authority](https://graphandnode.com/blog/the-healthcare-tofu-is-dead.html): An investigation into the collapse of informational healthcare SEO and the shift toward local entity trust in the age of AI Overviews.
 - [The MOFU Squeeze: Why AI Search is Anonymizing the Educational Funnel](https://graphandnode.com/blog/the-mofu-squeeze-ai-search-study.html): An empirical study of 30 AI search queries reveals a bifurcation in the middle funnel: educational queries are being anonymized while comparison queries remain brand-heavy.
 - [SEO is Not Dead. TOFU Is: The Compression of the Messy Middle](https://graphandnode.com/blog/seo-is-not-dead-tofu-is.html): An empirical study of 30 high-intent informational queries reveals that the "Top of Funnel" is being systematically erased from the brand-discovery journey.
@@ -96,6 +97,7 @@ Full definitions and strategic context are available in [llms-full.txt](https://
 
 ## Blog Posts & Technical Briefings
 
+- [The Localization Gap: Why AI Search Favors National Health Brands for BOFU Queries](https://graphandnode.com/blog/bofu-healthcare-localization-gap.html): An empirical study of 30 bottom-of-funnel healthcare queries reveals a significant national bias in AI search overviews, even when search origins are localized to Phoenix, AZ.
 - [The Healthcare TOFU is Dead: Why Local Entity Trust Now Trumps National Authority](https://graphandnode.com/blog/the-healthcare-tofu-is-dead.html): An investigation into the collapse of informational healthcare SEO and the shift toward local entity trust in the age of AI Overviews.
 - [The MOFU Squeeze: Why AI Search is Anonymizing the Educational Funnel](https://graphandnode.com/blog/the-mofu-squeeze-ai-search-study.html): An empirical study of 30 AI search queries reveals a bifurcation in the middle funnel: educational queries are being anonymized while comparison queries remain brand-heavy.
 - [SEO is Not Dead. TOFU Is: The Compression of the Messy Middle](https://graphandnode.com/blog/seo-is-not-dead-tofu-is.html): An empirical study of 30 high-intent informational queries reveals that the "Top of Funnel" is being systematically erased from the brand-discovery journey.
@@ -105,26 +107,30 @@ Full definitions and strategic context are available in [llms-full.txt](https://
 
 ### Article Summaries
 
-#### 1. The Healthcare TOFU is Dead: Why Local Entity Trust Now Trumps National Authority
+#### 1. The Localization Gap: Why AI Search Favors National Health Brands for BOFU Queries
+**URL:** https://graphandnode.com/blog/bofu-healthcare-localization-gap.html
+An empirical study of 30 bottom-of-funnel healthcare queries reveals a significant national bias in AI search overviews, even when search origins are localized to Phoenix, AZ. Data shows that AI models prioritize national "Centers of Excellence" over local providers 66.7% of the time.
+
+#### 2. The Healthcare TOFU is Dead: Why Local Entity Trust Now Trumps National Authority
 **URL:** https://graphandnode.com/blog/the-healthcare-tofu-is-dead.html
 An investigation into the collapse of informational healthcare SEO and the shift toward local entity trust in the age of AI Overviews. Data shows an 89% AIO coverage rate for health queries, turning TOFU content into a "Domain Authority Tax" rather than a discovery engine.
 
-#### 2. The MOFU Squeeze: Why AI Search is Anonymizing the Educational Funnel
+#### 3. The MOFU Squeeze: Why AI Search is Anonymizing the Educational Funnel
 **URL:** https://graphandnode.com/blog/the-mofu-squeeze-ai-search-study.html
 An empirical study of 30 AI search queries reveals a bifurcation in the middle funnel: educational queries are being anonymized while comparison queries remain brand-heavy.
 
-#### 3. SEO is Not Dead. TOFU Is: The Compression of the Messy Middle
+#### 4. SEO is Not Dead. TOFU Is: The Compression of the Messy Middle
 **URL:** https://graphandnode.com/blog/seo-is-not-dead-tofu-is.html
 An empirical study of 30 high-intent informational queries reveals that the "Top of Funnel" is being systematically erased from the brand-discovery journey. In 60% of cases, AI models provide comprehensive answers without brand attribution, effectively commoditizing informational content.
 
-#### 4. It's the Brand, Stupid: The Post-Commoditization Survival Guide
+#### 5. It's the Brand, Stupid: The Post-Commoditization Survival Guide
 **URL:** https://graphandnode.com/blog/its-the-brand-stupid.html
 An investigation into why automation and generative AI make brand authority the only non-fungible asset in a market flooded with commodity content. When AI can generate infinite synthetic content in seconds, raw content volume loses all value. The only remaining signal LLMs and users trust is verified entity authority and primary source evidence.
 
-#### 5. The Evidence Layer: Why GEO Requires Primary-Source Validation
+#### 6. The Evidence Layer: Why GEO Requires Primary-Source Validation
 **URL:** https://graphandnode.com/blog/the-evidence-layer-geo.html
 Moving beyond social proof to anchor AI search in objective truth. AI search engines seek primary-source validation (accreditations, certifications, regulatory filings, clinical datasets) before trusting an entity. Without a structured Evidence Layer, LLMs fall back to noisy discussion forums or omit the entity entirely.
 
-#### 6. How AI Search Engines Resolve Physician Entities
+#### 7. How AI Search Engines Resolve Physician Entities
 **URL:** https://graphandnode.com/blog/how-ai-search-resolves-physician-entities.html
 A deep dive into Retrieval-Augmented Generation (RAG) and Entity Resolution. Conflicting NPI registry data, outdated billing addresses, and unlinked sub-specialty profiles create data contradictions for LLMs, causing them to omit physicians from AI search recommendations in favor of competitors with verified entity consensus.

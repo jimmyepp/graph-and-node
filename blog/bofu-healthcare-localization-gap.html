@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Localization Gap: Why AI Search Favors National Health Brands for BOFU Queries | Graph & Node</title>
+  <meta name="description" content="An empirical study of 30 bottom-of-funnel healthcare queries reveals a significant national bias in AI search overviews, even when search origins are localized." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="container" style="padding-top: 2rem;">
+    <nav>
+      <ul>
+        <li><a href="../index.html" style="font-weight: bold; text-decoration: none;">← Graph & Node</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">Technical Briefings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" style="max-width: 800px; padding-top: 3rem;">
+    <section>
+      <p style="font-size: 0.85rem; color: var(--pico-primary); text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Investigation Report // 08</p>
+      <h1 style="font-size: 2.5rem; line-height: 1.1; margin-bottom: 1.5rem;">The Localization Gap: Why AI Search Favors National Health Brands for BOFU Queries</h1>
+      
+      <p style="font-size: 1.25rem; color: var(--pico-muted-color); margin-bottom: 2rem;">
+        We tested whether AI Search Overviews prioritize regional healthcare providers for high-intent "Bottom of Funnel" (BOFU) queries when the search origin is localized to Phoenix, Arizona.
+      </p>
+
+      <div style="background: rgba(255, 255, 255, 0.05); padding: 1.5rem; border-left: 4px solid #e74c3c; margin-bottom: 2.5rem;">
+        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Hypothesis Conclusion</h3>
+        <p style="margin-bottom: 0; font-weight: bold; color: #e74c3c;">HYPOTHESIS DISPROVED / CONTRADICTED BY DATA</p>
+        <p style="margin-top: 0.5rem; font-size: 0.95rem;">
+          The empirical data contradicts the hypothesis that AI Search Overviews cite regional healthcare entities at equal rates to national publishers for localized BOFU queries. In 66.7% of cases, AI models defaulted to national "Centers of Excellence" or major health publishers, even when the search origin was explicitly set to a major metropolitan area.
+        </p>
+      </div>
+
+      <h2 id="key-takeaways">Key Takeaways</h2>
+      <ul>
+        <li><strong>33.3% Localization Rate:</strong> Only one-third of BOFU queries triggered citations for local or regional healthcare entities, despite a search origin in Phoenix, AZ.</li>
+        <li><strong>National Authority Bias:</strong> AI models exhibit a strong preference for "Centers of Excellence" (e.g., Hospital for Special Surgery, Mayo Clinic, Cleveland Clinic) for high-stakes surgical queries, regardless of proximity.</li>
+        <li><strong>The "Mahopac" Anomaly:</strong> In some instances, AI models failed to localize entirely, providing specific local recommendations for cities thousands of miles away from the search origin (e.g., citing New York specialists for a Phoenix-based query).</li>
+        <li><strong>100% Trigger Rate:</strong> Google AI Overviews (AIO) triggered for 100% of the tested BOFU healthcare queries, indicating that AI is now the primary interface for high-intent patient discovery.</li>
+      </ul>
+
+      <h2 id="data-behind-study">The Data Behind this Study</h2>
+      <p>
+        We analyzed 30 live AI search queries across Google AI Overviews and Gemini, specifically targeting Bottom-of-Funnel (BOFU) knee replacement keywords. The search origin was fixed to <strong>Phoenix, Arizona</strong> to test the engine's ability to resolve local provider entities without explicit geographic modifiers in the prompt.
+      </p>
+
+      <h2 id="definitions">Definitions</h2>
+      <ul>
+        <li><strong>Bottom-of-Funnel (BOFU):</strong> Queries that indicate a user is ready to make a decision or take action (e.g., "best surgeons," "top hospitals," "schedule consultation").</li>
+        <li><strong>Regional Healthcare Entities:</strong> Local hospital networks (e.g., Banner Health, HonorHealth), specialized surgical centers, and private practices within the search origin's metropolitan area.</li>
+        <li><strong>National Health Publishers:</strong> High-authority domains that provide general medical information or national rankings (e.g., WebMD, Healthline, U.S. News & World Report).</li>
+        <li><strong>Centers of Excellence (CoE):</strong> Nationally recognized medical institutions that serve as primary citation hubs for complex procedures.</li>
+      </ul>
+
+      <h2 id="methodology">Experimental Setup</h2>
+      <p>
+        The study utilized a controlled search environment with the following parameters:
+      </p>
+      <ul>
+        <li><strong>Search Origin:</strong> Phoenix, Arizona.</li>
+        <li><strong>Query Set:</strong> 30 unique strings targeting knee replacement surgery, robotic assistance, and revision specialists.</li>
+        <li><strong>Models Tested:</strong> Google AI Overviews (AIO) and Gemini.</li>
+        <li><strong>Validation Criteria:</strong> A query was marked as "Validated" only if the AI response cited at least one local/regional provider entity at a rate equal to or greater than national publishers.</li>
+      </ul>
+
+      <h2 id="findings">Findings</h2>
+      <p>
+        The following table illustrates the performance of the tested models against the localization hypothesis.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>AIO Trigger Rate</th>
+            <th>Hypothesis Validation Rate</th>
+            <th>Primary Citation Bias</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Google AI Overviews</strong></td>
+            <td>100% (30/30)</td>
+            <td>33.3% (10/30)</td>
+            <td>National CoEs / Publishers</td>
+          </tr>
+          <tr>
+            <td><strong>Gemini</strong></td>
+            <td>N/A (Chat)</td>
+            <td>33.3% (10/30)</td>
+            <td>National CoEs / Publishers</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="raw-evidence">Raw Evidence & Case Studies</h2>
+
+      <div style="border: 1px solid rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+        <h4 style="margin-top: 0;">Case Study 1: The "Top Rated" Paradox</h4>
+        <p><strong>Query:</strong> "Top rated knee replacement hospitals"</p>
+        <p><strong>AI Response Snippet:</strong> <em>"Top-rated U.S. hospitals for knee replacement include the Hospital for Special Surgery in New York, NYU Langone Orthopedic Hospital in New York, New England Baptist Hospital in Boston, and Cleveland Clinic in Ohio..."</em></p>
+        <p><strong>Analysis:</strong> Despite the search origin being Phoenix, AZ—home to major orthopedic hubs like the Mayo Clinic (Phoenix campus) and Banner Health—the AI Overview defaulted to a national list dominated by East Coast and Midwest institutions. Proximity was ignored in favor of national ranking authority.</p>
+      </div>
+
+      <div style="border: 1px solid rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+        <h4 style="margin-top: 0;">Case Study 2: The Localization Failure</h4>
+        <p><strong>Query:</strong> "Orthopedic surgeons specializing in partial knee resurfacing"</p>
+        <p><strong>AI Response Snippet:</strong> <em>"Orthopedic surgeons near Mahopac, New York, who specialize in partial knee procedures include local specialists in Carmel and regional experts in New York City..."</em></p>
+        <p><strong>Analysis:</strong> This represents a critical failure of the localization engine. The model not only failed to cite Phoenix-based surgeons but actively hallucinated or defaulted to a different geographic cluster (New York), rendering the response useless for the local user.</p>
+      </div>
+
+      <div style="border: 1px solid rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+        <h4 style="margin-top: 0;">Case Study 3: The Revision Specialist Bias</h4>
+        <p><strong>Query:</strong> "Best doctors for revision knee replacement"</p>
+        <p><strong>AI Response Snippet:</strong> <em>"Top-tier national institutions like the Mayo Clinic feature prominent revision specialists such as Dr. Matthew P. Abdel. Regionally, expert care is available through major academic and specialized centers like RWJBarnabas Health and Penn Medicine."</em></p>
+        <p><strong>Analysis:</strong> While the Mayo Clinic was cited (which has a Phoenix presence), the response prioritized the Minnesota-based leadership and then pivoted to "regional" options in New Jersey and Pennsylvania. For a Phoenix-based patient, the "regional" recommendations were geographically irrelevant.</p>
+      </div>
+
+      <h2 id="industry-context">Deep Research & Industry Context</h2>
+      <p>
+        The dominance of national brands in AI search is not accidental. Research into AI search insights indicates that healthcare citations are heavily weighted toward "Safety Signals" and "YMYL" (Your Money Your Life) authority. According to industry analysis from <strong>BrightEdge</strong> and <strong>Search Engine Land</strong>, Google AI Overviews cite YouTube and national medical publishers more frequently than individual hospital sites for broad medical topics.
+      </p>
+      <p>
+        Furthermore, the <strong>Mayo Clinic</strong> and <strong>Cleveland Clinic</strong> have established "Entity Dominance" by consistently appearing in the training data of Large Language Models as the definitive authorities for orthopedic surgery. This creates a "Rich-Get-Richer" effect where AI models default to these entities even when a local alternative (like <strong>Banner Health</strong> or <strong>HonorHealth</strong> in Phoenix) is physically closer to the user.
+      </p>
+      <p>
+        Patient access reports from <strong>Kyruus</strong> suggest that while patients prefer local care, their discovery journey is increasingly mediated by digital platforms that prioritize perceived authority over geographic convenience.
+      </p>
+
+      <h2 id="strategic-takeaways">What this means for your brand</h2>
+      <p>
+        For regional healthcare providers and private practices, the "Localization Gap" represents a significant threat to patient acquisition. To compete, brands must shift from traditional SEO to <strong>Generative Engine Optimization (GEO)</strong>:
+      </p>
+      <ul>
+        <li><strong>Force Geographic Intent:</strong> Since AI models struggle to infer location for BOFU queries, local brands must optimize for "near me" and city-specific long-tail queries to trigger local entity resolution.</li>
+        <li><strong>Build Entity Consensus:</strong> Ensure that NPI data, local directory listings, and hospital affiliations are perfectly aligned. Contradictory data is the primary reason local surgeons are omitted from AI recommendations.</li>
+        <li><strong>Leverage Primary Source Evidence:</strong> AI models seek "Evidence Layers"—accreditations, specific surgical volumes, and clinical outcomes—before they will elevate a local provider to the level of a national "Center of Excellence."</li>
+        <li><strong>Optimize for "Blue Distinction":</strong> As seen in the data, AI models frequently cite "Blue Distinction Centers" for knee and hip replacement. Securing and highlighting these certifications is critical for AI visibility.</li>
+      </ul>
+
+      <hr style="margin-top: 3rem; margin-bottom: 2rem;" />
+
+      <section id="citations">
+        <h3 style="font-size: 1.2rem;">Primary Sources & Citations</h3>
+        <ul style="font-size: 0.85rem; color: var(--pico-muted-color);">
+          <li>BrightEdge. "Weekly AI Search Insights: Healthcare AI Citations." <a href="https://www.brightedge.com/resources/weekly-ai-search-insights/healthcare-ai-citations-chatgpt-vs-google-trust">Source</a></li>
+          <li>Search Engine Land. "Google AI Overviews Cite YouTube for Health Topics." <a href="https://searchengineland.com/google-ai-overviews-cite-youtube-health-topics-467628">Source</a></li>
+          <li>Mayo Clinic. "Orthopedic Surgery Departments and Centers." <a href="https://www.mayoclinic.org/departments-centers/orthopedic-surgery/home/orc-20126749">Source</a></li>
+          <li>Banner Health. "Banner University Medical Center Phoenix: Total Hip and Knee Replacement." <a href="https://www.bannerhealth.com/newsroom/press-releases/banner-university-medical-center-phoenix-offering-total-hip-and-knee-replacement-revision-surgeries">Source</a></li>
+          <li>Kyruus. "Patient Access Journey Report." <a href="https://base.imgix.net/files/base/ebm/hci/document/2020/01/Kyruus_Patient_Access_Journey_Report_2019.5dc1ede9c961a.5e100f43a1e57.pdf">Source</a></li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <footer class="container" style="padding-top: 5rem; padding-bottom: 3rem; text-align: center; color: var(--pico-muted-color); font-size: 0.8rem;">
+    <p>&copy; 2026 Graph & Node LLC. Empirical Research for the Generative Age.</p>
+  </footer>
+</body>
+</html>
