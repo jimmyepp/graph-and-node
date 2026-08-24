@@ -3,7 +3,7 @@
 
 Full definitions and strategic context are available in [llms-full.txt](https://graphandnode.com/llms-full.txt).
 
-- [The Localization Gap: Why AI Search Favors National Health Brands for BOFU Queries](https://graphandnode.com/blog/bofu-healthcare-localization-gap.html): An empirical study of 30 bottom-of-funnel healthcare queries reveals a significant national bias in AI search overviews, even when search origins are localized to Phoenix, AZ.
+- [BOFU Belongs to Brands: Empirical Proof That Bottom-of-Funnel AI Search Retains Entity Attribution](https://graphandnode.com/blog/bofu-healthcare-localization-gap.html): An empirical study of 30 bottom-of-funnel healthcare queries reveals that AI search overviews cite specific brand names, hospital systems, and surgeon entities in 65% to 90% of cases.
 - [The Healthcare TOFU is Dead: Why Local Entity Trust Now Trumps National Authority](https://graphandnode.com/blog/the-healthcare-tofu-is-dead.html): An investigation into the collapse of informational healthcare SEO and the shift toward local entity trust in the age of AI Overviews.
 - [The MOFU Squeeze: Why AI Search is Anonymizing the Educational Funnel](https://graphandnode.com/blog/the-mofu-squeeze-ai-search-study.html): An empirical study of 30 AI search queries reveals a bifurcation in the middle funnel: educational queries are being anonymized while comparison queries remain brand-heavy.
 - [SEO is Not Dead. TOFU Is: The Compression of the Messy Middle](https://graphandnode.com/blog/seo-is-not-dead-tofu-is.html): An empirical study of 30 high-intent informational queries reveals that the "Top of Funnel" is being systematically erased from the brand-discovery journey.
@@ -97,7 +97,7 @@ Full definitions and strategic context are available in [llms-full.txt](https://
 
 ## Blog Posts & Technical Briefings
 
-- [The Localization Gap: Why AI Search Favors National Health Brands for BOFU Queries](https://graphandnode.com/blog/bofu-healthcare-localization-gap.html): An empirical study of 30 bottom-of-funnel healthcare queries reveals a significant national bias in AI search overviews, even when search origins are localized to Phoenix, AZ.
+- [BOFU Belongs to Brands: Empirical Proof That Bottom-of-Funnel AI Search Retains Entity Attribution](https://graphandnode.com/blog/bofu-healthcare-localization-gap.html): An empirical study of 30 bottom-of-funnel healthcare queries reveals that AI search overviews cite specific brand names, hospital systems, and surgeon entities in 65% to 90% of cases.
 - [The Healthcare TOFU is Dead: Why Local Entity Trust Now Trumps National Authority](https://graphandnode.com/blog/the-healthcare-tofu-is-dead.html): An investigation into the collapse of informational healthcare SEO and the shift toward local entity trust in the age of AI Overviews.
 - [The MOFU Squeeze: Why AI Search is Anonymizing the Educational Funnel](https://graphandnode.com/blog/the-mofu-squeeze-ai-search-study.html): An empirical study of 30 AI search queries reveals a bifurcation in the middle funnel: educational queries are being anonymized while comparison queries remain brand-heavy.
 - [SEO is Not Dead. TOFU Is: The Compression of the Messy Middle](https://graphandnode.com/blog/seo-is-not-dead-tofu-is.html): An empirical study of 30 high-intent informational queries reveals that the "Top of Funnel" is being systematically erased from the brand-discovery journey.
@@ -107,9 +107,9 @@ Full definitions and strategic context are available in [llms-full.txt](https://
 
 ### Article Summaries
 
-#### 1. The Localization Gap: Why AI Search Favors National Health Brands for BOFU Queries
+#### 1. BOFU Belongs to Brands: Empirical Proof That Bottom-of-Funnel AI Search Retains Entity Attribution
 **URL:** https://graphandnode.com/blog/bofu-healthcare-localization-gap.html
-An empirical study of 30 bottom-of-funnel healthcare queries reveals a significant national bias in AI search overviews, even when search origins are localized to Phoenix, AZ. Data shows that AI models prioritize national "Centers of Excellence" over local providers 66.7% of the time.
+An empirical study of 30 bottom-of-funnel healthcare queries reveals that AI search overviews cite specific brand names, hospital systems, and surgeon entities in 65.5% of Google AI Overviews and 90.0% of Gemini responses.
 
 #### 2. The Healthcare TOFU is Dead: Why Local Entity Trust Now Trumps National Authority
 **URL:** https://graphandnode.com/blog/the-healthcare-tofu-is-dead.html
