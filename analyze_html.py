@@ -52,7 +52,7 @@ print("\n--- 6. Inline Scripts of Interest ---")
 endpoint_scripts = re.findall(r'<script[^>]*>([\s\S]*?)</script>', html, re.IGNORECASE)
 found_endpoints = False
 for s in endpoint_scripts:
-    if "API_ENDPOINTS" in s or "doctorlocations" in s or "kyruus" in s:
+    if "API_ENDPOINTS" in s or "doctorlocations" in s or "vendor" in s:
         found_endpoints = True
         print("Found API_ENDPOINTS script:")
         print(s.strip()[:1000])

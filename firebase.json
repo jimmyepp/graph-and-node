@@ -47,9 +47,9 @@
       "fetch_raw_html.py",
       "test_api.py",
       "test_api_sparkle.py",
-      "test_kyruus.py",
-      "test_kyruus_keywords.py",
-      "test_kyruus_sparkle_details.py",
+      "test_vendor.py",
+      "test_vendor_keywords.py",
+      "test_vendor_sparkle_details.py",
       ".DS_Store",
       "**/.DS_Store"
     ]

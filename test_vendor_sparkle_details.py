@@ -20,7 +20,14 @@ try:
         body = response.read().decode('utf-8', errors='ignore')
         parsed = json.loads(body)
         providers = parsed.get("providers", [])
-        if providers:
-            print(json.dumps(providers[0], indent=2))
+        print(f"Found {len(providers)} providers matching 'sparkle':")
+        for i, provider in enumerate(providers, 1):
+            print(f"\n[{i}] Name: {provider.get('name')}")
+            print(f"    Specialty: {provider.get('specialty')}")
+            # Look for 'sparkle' in the provider dict keys and values (ignoring the 'imageUrl' which always contains sparkle-assets)
+            for k, v in provider.items():
+                if k != "imageUrl" and v and "sparkle" in str(v).lower():
+                    print(f"    Field '{k}' contains 'sparkle':")
+                    print(f"      {str(v)[:300]}")
 except Exception as e:
     print(f"Error: {e}")
