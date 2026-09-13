@@ -902,3 +902,126 @@ body.menu-open {
 .term-card.hidden {
   display: none !important;
 }
+
+/* Services & Packages Grid */
+.package-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .package-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.package-card {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 12px !important;
+  padding: 2.5rem !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.package-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(8, 145, 178, 0.4) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08), 0 0 20px rgba(8, 145, 178, 0.05) !important;
+}
+
+.package-card.featured {
+  border: 2px solid var(--pico-primary) !important;
+  box-shadow: 0 8px 25px rgba(8, 145, 178, 0.15) !important;
+}
+
+.package-card.featured:hover {
+  box-shadow: 0 15px 35px rgba(8, 145, 178, 0.25) !important;
+}
+
+.package-card .badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--pico-primary);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(8, 145, 178, 0.3);
+}
+
+.package-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+  color: #111827;
+}
+
+.package-card .tagline {
+  font-size: 0.95rem;
+  color: var(--pico-muted-color);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.package-card .price-container {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.package-card .price {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.package-card .price span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin-left: 0.25rem;
+}
+
+.package-features {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.package-features li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.package-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--pico-primary);
+  font-weight: 700;
+}
+
+.package-card .footnote {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
